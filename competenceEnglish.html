@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="styleCompetence.css">
+</head>
+<body>
+    <header>
+        <label for="menu-cb" class="menu-label">
+            <svg viewBox="0 0 32 32" fill="#666">
+                <rect x="0" y="4" rx="3" ry="3" width="32" height="3" />
+                <rect x="0" y="14" rx="3" ry="3" width="32" height="3" />
+                <rect x="0" y="24" rx="3" ry="3" width="32" height="3" />
+            </svg>
+        </label>
+        <input type="checkbox" id="menu-cb" class="menu-cb">
+        <nav class="menu-nav">
+            <ul>
+                <li class="menu-item"><a href="index_english.html#about_me">About Me</a></li>
+                <li class="menu-item"><a href="index_english.html#skills">My Skills</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="dropbtn">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="#project1">Project 1</a>
+                        <a href="#project2">Project 2</a>
+                        <a href="#project3">Project 3</a>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="index_english.html#contact">Contact</a></li>
+                <li class="menu-item">
+                    <a href="https://github.com/lexinhio"><img class="logo_media" src="img/logo_github.png" alt="Github"></a>
+                </li>
+                <li class="menu-item dropdown">
+                <a href="#" class="dropbtn">language</a>
+                    <div class="dropdown-content">
+                    <a href="competence.html">French</a>
+                        <a href="competenceEnglish.html">English</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main>
+    <section id="all-skills" class="scroll-animate">
+        <h1>All My Skills</h1>
+        <ul class="filter-links">
+            <li><a href="#" class="filter-link" data-category="all">All</a></li>
+            <li><a href="#" class="filter-link" data-category="edition">Editing</a></li>
+            <li><a href="#" class="filter-link" data-category="langage">Languages</a></li>
+            <li><a href="#" class="filter-link" data-category="gestion">Management</a></li>
+            <li><a href="#" class="filter-link" data-category="basededonne">Database</a></li>
+            <li><a href="#" class="filter-link" data-category="software">Software</a></li>
+            <li><a href="#" class="filter-link" data-category="framework">Framework</a></li>
+        </ul>
+        <div class="skills-container">
+        <div class="skill" data-category="langage" id="HTML">
+<img src="img/html_icon.png" alt="HTML">
+<h3>HTML</h3>
+<p>HTML (HyperText Markup Language) is the standard language for creating and structuring web documents and their content. It defines the logical structure of information on a web page and includes elements for text, images, forms, videos, and more.</p>
+<span class="skill-level">Level: Advanced</span>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="code-link">HTML Documentation</a>
+
+</div>
+<div class="skill" data-category="langage" id="CSS">
+    <img src="img/css_icon.png" alt="CSS">
+    <h3>CSS</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>CSS (Cascading Style Sheets) is a language used to describe the visual presentation of an HTML document. It allows styling of web page content, including layout, colors, fonts, spacing, and more. CSS also enables the creation of animations and interactive effects.</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="code-link">CSS Documentation</a>
+</div>
+<div class="skill" data-category="langage" id="JS">
+    <img src="img/js_icon.png" alt="JavaScript">
+    <h3>JavaScript</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>JavaScript is a high-level programming language often used to create interactive and dynamic web pages. It is primarily executed on the client side in a web browser, but can also be used on the server side with Node.js. JavaScript offers a wide range of features, including DOM manipulation, user interaction, and asynchronous data handling.</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="code-link">JavaScript Documentation</a>
+</div>
+<div class="skill" data-category="langage">
+    <img src="img/python_icon.svg" alt="Python">
+    <h3>Python</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Python is a versatile programming language known for its simplicity and readability. It is used in various fields such as web development, data analysis, artificial intelligence, task automation, and more. Python encourages clear and concise syntax, making it a popular choice among both beginners and experienced developers.</p>
+    <a href="https://www.python.org/" target="_blank" class="code-link">Python Documentation</a>
+</div>
+<div class="skill" data-category="langage">
+    <img src="img/java_icon.png" alt="Java">
+    <h3>Java</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Java is a popular programming language primarily used for backend development, but also for mobile applications (Android) and desktop applications. It is known for its portability, security, and robustness. Java is also widely used in embedded systems, video games, and financial applications.</p>
+    <a href="https://www.oracle.com/java/" target="_blank" class="code-link">Java Documentation</a>
+</div>
+<div class="skill" data-category="langage">
+    <img src="img/javafx_icon.png" alt="JavaFX">
+    <h3>JavaFX</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>JavaFX is a graphics library used for creating rich applications in Java. It allows the development of modern user interfaces with advanced features such as animations, visual effects, and event handling. JavaFX is often used for desktop applications and sophisticated user interfaces.</p>
+    <a href="https://openjfx.io/" target="_blank" class="code-link">JavaFX Documentation</a>
+</div>
+<div class="skill" data-category="langage">
+    <img src="img/cpp_icon.png" alt="C++">
+    <h3>C++</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>C++ is an object-oriented and low-level programming language derived from C. It is used to develop system software, video games, graphics applications, embedded systems, and more. C++ offers high performance and precise control over hardware, making it a common choice for applications requiring maximum efficiency.</p>
+    <a href="https://isocpp.org/" target="_blank" class="code-link">C++ Documentation</a>
+</div>
+<div class="skill" data-category="langage">
+    <img src="img/c_icon.png" alt="C">
+    <h3>C</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>C is a low-level programming language primarily used for developing operating systems, embedded software, and applications requiring direct access to hardware memory. C is appreciated for its performance, portability, and control over hardware.</p>
+    <a href="https://devdocs.io/c/" target="_blank" class="code-link">C Documentation</a>
+</div>
+<div class="skill" data-category="basededonne">
+    <img src="img/mysql_icon.png" alt="MySQL">
+    <h3>MySQL</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>MySQL is an open-source relational database management system widely used for storing and managing structured data. It is known for its high performance, reliability, and ease of use, making it a popular choice among developers and organizations for web applications and enterprise systems.</p>
+    <a href="https://dev.mysql.com/doc/" target="_blank" class="code-link">MySQL Documentation</a>
+</div>
+<div class="skill" data-category="basededonne">
+    <img src="img/postgresql_icon.png" alt="PostgreSQL">
+    <h3>PostgreSQL</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>PostgreSQL is a powerful open-source relational database management system. Known for its SQL compliance, reliability, and advanced features such as transaction support, replication, and constraint management, PostgreSQL is used in many professional and critical environments.</p>
+    <a href="https://www.postgresql.org/docs/" target="_blank" class="code-link">PostgreSQL Documentation</a>
+</div>
+<div class="skill" data-category="basededonne">
+    <img src="img/sqlite_icon.png" alt="SQLite">
+    <h3>SQLite</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>SQLite is a lightweight and self-contained relational database management system. Unlike other DBMSs, SQLite does not require a separate server process and reads and writes directly to ordinary disk files. It is widely used for embedded systems, mobile applications, and testing environments.</p>
+    <a href="https://sqlite.org/docs.html" target="_blank" class="code-link">SQLite Documentation</a>
+</div>
+<!--
+<div class="skill" data-category="basededonne">
+    <img src="img/redis_icon.png" alt="Redis">
+    <h3>Redis</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Redis is an in-memory data structure store often used as a cache, database, and message broker. It supports various data structures like strings, lists, sets, and more. Redis is known for its high performance and low latency, making it ideal for real-time applications.</p>
+    <a href="https://redis.io/documentation" target="_blank" class="code-link">Redis Documentation</a>
+</div>
+<div class="skill" data-category="basededonne">
+    <img src="img/mongodb_icon.png" alt="MongoDB">
+    <h3>MongoDB</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>MongoDB is a NoSQL database that uses a flexible, document-oriented data model. It allows storage and retrieval of data in JSON-like format, making it suitable for handling unstructured or semi-structured data. MongoDB is often used for large-scale applications and big data environments.</p>
+    <a href="https://docs.mongodb.com/" target="_blank" class="code-link">MongoDB Documentation</a>
+</div>
+<div class="skill" data-category="basededonne">
+    <img src="img/oracle_icon.png" alt="Oracle">
+    <h3>Oracle</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Oracle Database is a high-performance, enterprise-grade relational database management system. It provides comprehensive data management capabilities, including high availability, security, and scalability. Oracle is widely used in large organizations and critical environments for managing structured data.</p>
+    <a href="https://docs.oracle.com/en/database/" target="_blank" class="code-link">Oracle Documentation</a>
+</div>
+<div class="skill" data-category="gestion">
+    <img src="img/agile_icon.png" alt="Agile">
+    <h3>Agile</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Agile is a project management methodology that promotes iterative development, collaboration, and flexibility. It is based on the Agile Manifesto, which emphasizes delivering valuable software through adaptive planning, cross-functional teams, and continuous improvement. Agile methodologies like Scrum and Kanban are widely used in software development.</p>
+    <a href="https://www.agilealliance.org/agile101/" target="_blank" class="code-link">Agile Documentation</a>
+</div>
+<div class="skill" data-category="gestion">
+    <img src="img/scrum_icon.png" alt="Scrum">
+    <h3>Scrum</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Scrum is an Agile framework used for managing and completing complex projects. It divides the project into small, manageable iterations called sprints. Scrum emphasizes teamwork, collaboration, and regular feedback, with roles such as Scrum Master, Product Owner, and Development Team ensuring efficient project delivery.</p>
+    <a href="https://www.scrum.org/resources/what-is-scrum" target="_blank" class="code-link">Scrum Documentation</a>
+</div>
+<div class="skill" data-category="gestion">
+    <img src="img/kanban_icon.png" alt="Kanban">
+    <h3>Kanban</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Kanban is an Agile methodology focused on visualizing work, managing flow, and improving processes. It uses a Kanban board to represent tasks and their statuses, allowing teams to see work in progress and identify bottlenecks. Kanban aims to increase efficiency and deliver value continuously.</p>
+    <a href="https://kanbanize.com/kanban-resources/getting-started/what-is-kanban" target="_blank" class="code-link">Kanban Documentation</a>
+</div>
+<div class="skill" data-category="framework">
+    <img src="img/react_icon.png" alt="React">
+    <h3>React</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>React is a JavaScript library developed by Facebook for building user interfaces. It allows the creation of reusable UI components and the efficient updating of the virtual DOM. React is often used to develop dynamic web applications and single-page applications (SPAs).</p>
+    <a href="https://reactjs.org/" target="_blank" class="code-link">React Documentation</a>
+</div>
+<div class="skill" data-category="framework">
+    <img src="img/vue_icon.png" alt="Vue.js">
+    <h3>Vue.js</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Vue.js is a progressive JavaScript framework used for building user interfaces. It is known for its simplicity, flexibility, and ease of integration with other libraries or existing projects. Vue.js allows the development of interactive web applications and single-page applications.</p>
+    <a href="https://vuejs.org/" target="_blank" class="code-link">Vue.js Documentation</a>
+</div>
+<div class="skill" data-category="framework">
+    <img src="img/angular_icon.png" alt="Angular">
+    <h3>Angular</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Angular is a TypeScript-based web application framework developed by Google. It allows the creation of dynamic and interactive web applications using a component-based architecture. Angular provides comprehensive tools and libraries for developing single-page applications and enterprise-level projects.</p>
+    <a href="https://angular.io/" target="_blank" class="code-link">Angular Documentation</a>
+</div>
+<div class="skill" data-category="framework">
+    <img src="img/django_icon.png" alt="Django">
+    <h3>Django</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It provides a robust set of features for building secure and scalable web applications, including an ORM, authentication system, and administrative interface.</p>
+    <a href="https://www.djangoproject.com/" target="_blank" class="code-link">Django Documentation</a>
+</div>
+<div class="skill" data-category="framework">
+    <img src="img/laravel_icon.png" alt="Laravel">
+    <h3>Laravel</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Laravel is a PHP web application framework known for its elegant syntax and powerful features. It provides tools and libraries for common web development tasks, such as routing, authentication, and database interactions. Laravel is designed to make web development faster and more enjoyable.</p>
+    <a href="https://laravel.com/" target="_blank" class="code-link">Laravel Documentation</a>
+</div>
+<div class="skill" data-category="framework">
+    <img src="img/nodejs_icon.png" alt="Node.js">
+    <h3>Node.js</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Node.js is a JavaScript runtime built on Chrome's V8 engine. It allows the execution of JavaScript code on the server side, enabling the development of scalable and high-performance web applications. Node.js is often used for backend development, APIs, and real-time applications.</p>
+    <a href="https://nodejs.org/" target="_blank" class="code-link">Node.js Documentation</a>
+</div>
+
+<div class="skill" data-category="framework">
+    <img src="img/express_icon.png" alt="Express">
+    <h3>Express</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Express is a minimal and flexible Node.js web application framework. It provides a set of features and tools for building web applications and APIs. Express is known for its simplicity and performance, making it a popular choice for developing server-side applications.</p>
+    <a href="https://expressjs.com/" target="_blank" class="code-link">Express Documentation</a>
+</div>
+<div class="skill" data-category="edition">
+    <img src="img/photoshop_icon.png" alt="Photoshop">
+    <h3>Photoshop</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Photoshop is a professional image editing software developed by Adobe. It provides a wide range of tools and features for creating and manipulating digital images, including photo retouching, graphic design, and web design. Photoshop is widely used in the creative industry for its versatility and advanced capabilities.</p>
+    <a href="https://www.adobe.com/products/photoshop.html" target="_blank" class="code-link">Photoshop Documentation</a>
+</div>
+<div class="skill" data-category="edition">
+    <img src="img/illustrator_icon.png" alt="Illustrator">
+    <h3>Illustrator</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Illustrator is a vector graphics editing software developed by Adobe. It is used for creating scalable graphics, illustrations, logos, and typography. Illustrator provides a variety of tools and features for designing precise and high-quality vector artwork, making it a popular choice for graphic designers and illustrators.</p>
+    <a href="https://www.adobe.com/products/illustrator.html" target="_blank" class="code-link">Illustrator Documentation</a>
+</div>
+
+<div class="skill" data-category="edition">
+    <img src="img/indesign_icon.png" alt="InDesign">
+    <h3>InDesign</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>InDesign is a desktop publishing software developed by Adobe. It is used for creating print and digital publications, such as brochures, magazines, and eBooks. InDesign provides tools for layout design, typography, and image manipulation, making it a key tool for professionals in the publishing industry.</p>
+    <a href="https://www.adobe.com/products/indesign.html" target="_blank" class="code-link">InDesign Documentation</a>
+</div>
+-->
+<div class="skill" data-category="gestion">
+    <img src="img/figma-logo-512.webp" alt="Figma">
+    <h3>Figma</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Figma is a collaborative interface design tool that allows multiple designers to work on the same project in real time. It provides a range of features for designing user interfaces, prototyping, and collaboration. Figma is known for its accessibility and ease of use, making it a popular choice for UI/UX designers.</p>
+    <a href="https://www.figma.com/" target="_blank" class="code-link">Figma Documentation</a>
+</div>
+<!--
+<div class="skill" data-category="ci-cd">
+    <img src="img/jenkins_icon.png" alt="Jenkins">
+    <h3>Jenkins</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Jenkins is an open-source automation server used for continuous integration and continuous delivery (CI/CD). It provides tools and plugins for automating the building, testing, and deployment of software projects. Jenkins helps improve software quality and accelerate development workflows through automated processes.</p>
+    <a href="https://www.jenkins.io/doc/" target="_blank" class="code-link">Jenkins Documentation</a>
+</div>
+<div class="skill" data-category="ci-cd">
+    <img src="img/docker_icon.png" alt="Docker">
+    <h3>Docker</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Docker is an open-source platform for containerization, which allows developers to package applications and their dependencies into containers. Containers provide a consistent runtime environment, ensuring applications run reliably across different environments. Docker is widely used for developing, shipping, and running applications.</p>
+    <a href="https://docs.docker.com/" target="_blank" class="code-link">Docker Documentation</a>
+</div>
+<div class="skill" data-category="ci-cd">
+    <img src="img/kubernetes_icon.png" alt="Kubernetes">
+    <h3>Kubernetes</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Kubernetes is an open-source platform for automating the deployment, scaling, and management of containerized applications. It provides a robust set of features for orchestrating containers, ensuring high availability, and managing clusters. Kubernetes is widely used for managing large-scale, distributed applications in production environments.</p>
+    <a href="https://kubernetes.io/docs/" target="_blank" class="code-link">Kubernetes Documentation</a>
+</div>
+<div class="skill" data-category="ci-cd">
+    <img src="img/ansible_icon.png" alt="Ansible">
+    <h3>Ansible</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Ansible is an open-source automation tool used for configuration management, application deployment, and task automation. It uses a simple, human-readable language called YAML to define automation tasks. Ansible helps streamline IT operations by automating repetitive tasks and managing infrastructure efficiently.</p>
+    <a href="https://docs.ansible.com/" target="_blank" class="code-link">Ansible Documentation</a>
+</div>
+<div class="skill" data-category="cloud">
+    <img src="img/aws_icon.png" alt="AWS">
+    <h3>AWS</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Amazon Web Services (AWS) is a comprehensive cloud computing platform provided by Amazon. It offers a wide range of cloud services, including computing power, storage, and databases, as well as tools for machine learning, analytics, and IoT. AWS is widely used by businesses and developers for building and scaling applications in the cloud.</p>
+    <a href="https://aws.amazon.com/documentation/" target="_blank" class="code-link">AWS Documentation</a>
+</div>
+<div class="skill" data-category="cloud">
+    <img src="img/azure_icon.png" alt="Azure">
+    <h3>Azure</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Microsoft Azure is a cloud computing platform and service provided by Microsoft. It offers a broad range of cloud services, including virtual machines, databases, and AI tools. Azure is used by businesses and developers to build, deploy, and manage applications in the cloud, providing scalability, security, and flexibility.</p>
+    <a href="https://docs.microsoft.com/en-us/azure/" target="_blank" class="code-link">Azure Documentation</a>
+</div>
+<div class="skill" data-category="cloud">
+    <img src="img/googlecloud_icon.png" alt="Google Cloud">
+    <h3>Google Cloud</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Google Cloud Platform (GCP) is a suite of cloud computing services provided by Google. It offers a range of services, including computing, storage, machine learning, and data analytics. GCP enables businesses and developers to build, deploy, and scale applications in a highly reliable and secure cloud environment.</p>
+    <a href="https://cloud.google.com/docs" target="_blank" class="code-link">Google Cloud Documentation</a>
+</div>
+<div class="skill" data-category="cloud">
+    <img src="img/heroku_icon.png" alt="Heroku">
+    <h3>Heroku</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Heroku is a cloud platform as a service (PaaS) that allows developers to build, run, and operate applications entirely in the cloud. It supports multiple programming languages and provides a simple and intuitive platform for deploying and scaling web applications. Heroku is known for its ease of use and developer-friendly environment.</p>
+    <a href="https://devcenter.heroku.com/" target="_blank" class="code-link">Heroku Documentation</a>
+</div>
+<div class="skill" data-category="cloud">
+    <img src="img/digitalocean_icon.png" alt="DigitalOcean">
+    <h3>DigitalOcean</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>DigitalOcean is a cloud infrastructure provider that offers cloud services for developers to deploy and scale applications. It provides virtual private servers, managed databases, and container orchestration, among other services. DigitalOcean is known for its simplicity, affordability, and robust performance.</p>
+    <a href="https://docs.digitalocean.com/" target="_blank" class="code-link">DigitalOcean Documentation</a>
+</div>
+<div class="skill" data-category="tool">
+    <img src="img/trello_icon.png" alt="Trello">
+    <h3>Trello</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Trello is a web-based project management tool that uses boards, lists, and cards to organize tasks and collaborate with team members. It is known for its intuitive interface and flexibility, making it suitable for a wide range of projects and workflows. Trello helps teams stay organized and track progress efficiently.</p>
+    <a href="https://trello.com/guide" target="_blank" class="code-link">Trello Documentation</a>
+</div>
+
+<div class="skill" data-category="tool">
+    <img src="img/jira_icon.png" alt="Jira">
+    <h3>Jira</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Jira is a project management and issue tracking tool developed by Atlassian. It is widely used for Agile project management, allowing teams to plan, track, and release software efficiently. Jira provides features for creating user stories, tracking tasks, and generating reports to improve project visibility and collaboration.</p>
+    <a href="https://www.figma.com/" target="_blank" class="code-link">Figma Official Site</a>
+</div>
+-->
+<div class="skill" data-category="edition">
+    <img src="img/xml_icon.png" alt="XML">
+    <h3>XML</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>XML (eXtensible Markup Language) is a markup language designed to store and transport structured data. It is widely used for data exchange between heterogeneous systems and for configuring complex documents. XML is extensible and allows defining custom data structures using schemas.</p>
+    <a href="https://www.w3.org/XML/" target="_blank" class="code-link">XML Documentation</a>
+</div>
+
+<div class="skill" data-category="langage" id="PowerShell">
+    <img src="img/powershell_icon.png" alt="PowerShell">
+    <h3>PowerShell</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>PowerShell is a scripting language developed by Microsoft, primarily used for task automation and system configuration management. It provides a robust command-line interface (CLI) and an interactive scripting environment, ideal for system administration and deployment.</p>
+    <a href="https://docs.microsoft.com/en-us/powershell/" target="_blank" class="code-link">PowerShell Documentation</a>
+</div>
+
+<div class="skill" data-category="edition">
+    <img src="img/json_icon.png" alt="JSON">
+    <h3>JSON</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>JSON (JavaScript Object Notation) is a lightweight data interchange format, easy to read and write for humans, and easy to interpret and generate for machines. It is based on a subset of the JavaScript programming language but is language-independent. JSON is widely used in web applications for data transfer and storage.</p>
+    <a href="https://www.json.org/" target="_blank" class="code-link">JSON Documentation</a>
+</div>
+<div class="skill" data-category="gestion">
+    <img src="img/logo_github.png" alt="GitHub">
+    <h3>GitHub</h3>
+    <p>GitHub is a collaborative software development platform based on Git. It offers version control, collaboration, issue tracking, and continuous integration features. GitHub is widely used for hosting source code, project management, and contributing to open-source projects.</p>
+    <span class="skill-level">Level: Intermediate</span>
+    <a href="https://github.com/" target="_blank" class="code-link">GitHub Official Site</a>
+</div>
+
+<div class="skill" data-category="gestion">
+    <img src="img/gitlab_icon.png" alt="GitLab">
+    <h3>GitLab</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>GitLab is an alternative to GitHub, offering decentralized version control and collaborative development features. It also provides CI/CD (Continuous Integration/Continuous Deployment) tools, an integrated wiki, and package management options. GitLab is often preferred for enterprise environments and those looking for a self-hosted development solution.</p>
+    <a href="https://about.gitlab.com/" target="_blank" class="code-link">GitLab Official Site</a>
+</div>
+<!--
+<div class="skill" data-category="management">
+    <img src="img/azure_icon.png" alt="Microsoft Azure">
+    <h3>Azure</h3>
+    <span class="skill-level">Level: Beginner</span>
+    <p>Microsoft Azure is a cloud computing platform provided by Microsoft. It offers a wide range of services for computing, storage, database, analytics, security, and more. Azure enables developers to build, manage, and deploy applications on a global network of data centers managed by Microsoft.</p>
+    <a href="https://azure.microsoft.com/" target="_blank" class="code-link">Microsoft Azure Official Site</a>
+</div>
+-->
+<div class="skill" data-category="software">
+    <img src="img/vscode_icon.png" alt="Visual Studio Code">
+    <h3>Visual Studio Code</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Visual Studio Code is a lightweight, powerful, free code editor developed by Microsoft. It supports numerous programming languages and offers features such as syntax highlighting, code completion, built-in debugging, extension management, and more.</p>
+    <a href="https://code.visualstudio.com/" target="_blank" class="code-link">Visual Studio Code Official Site</a>
+</div>
+
+<div class="skill" data-category="software">
+    <img src="img/pyzo_icon.png" alt="Pyzo">
+    <h3>Pyzo</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Pyzo is an Integrated Development Environment (IDE) specifically designed for Python. It provides an interactive code editor, Python environment management, tools for scientific data visualization, and compatibility with scientific libraries such as NumPy and Matplotlib.</p>
+    <a href="https://pyzo.org/" target="_blank" class="code-link">Pyzo Official Site</a>
+</div>
+
+<div class="skill" data-category="gestion">
+    <img src="img/visual_paradigm_icon.png" alt="Visual Paradigm">
+    <h3>Visual Paradigm</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Visual Paradigm is an advanced UML modeling and design tool used for visual modeling of software systems. It allows creation of UML diagrams, requirement management, software architecture design, and code generation.</p>
+    <a href="https://www.visual-paradigm.com/" target="_blank" class="code-link">Visual Paradigm Official Site</a>
+</div>
+
+<div class="skill" data-category="software">
+    <img src="img/intellij_icon.png" alt="IntelliJ IDEA">
+    <h3>IntelliJ IDEA</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>IntelliJ IDEA is an Integrated Development Environment (IDE) developed by JetBrains for Java, Kotlin, Groovy, and Scala. It offers advanced features such as static code analysis, intelligent refactoring, version control support, and a wide range of plugins to enhance developer productivity.</p>
+    <a href="https://www.jetbrains.com/idea/" target="_blank" class="code-link">IntelliJ IDEA Official Site</a>
+</div>
+
+<div class="skill" data-category="software">
+    <img src="img/clion_icon.png" alt="CLion">
+    <h3>CLion</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>CLion is an Integrated Development Environment (IDE) by JetBrains primarily designed for C and C++ development. It offers intelligent code editor, debugging support, refactoring tools, and seamless integration with CMake and other development tools.</p>
+    <a href="https://www.jetbrains.com/clion/" target="_blank" class="code-link">CLion Official Site</a>
+</div>
+
+<div class="skill" data-category="software">
+    <img src="img/notepadplusplus_icon.png" alt="Notepad++">
+    <h3>Notepad++</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Notepad++ is a free text and source code editor for Windows. It supports multiple programming languages, offers advanced editing features such as syntax highlighting, code completion, multi-tab support, and customization via plugins.</p>
+    <a href="https://notepad-plus-plus.org/" target="_blank" class="code-link">Notepad++ Official Site</a>
+</div>
+
+<div class="skill" data-category="language" id="PHP">
+    <img src="img/php_icon.svg" alt="PHP">
+    <h3>PHP</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>PHP (Hypertext Preprocessor) is a widely-used server-side scripting language for web development. It is primarily used for generating dynamic web pages, processing forms, managing user sessions, interacting with databases, and much more.</p>
+    <a href="https://www.php.net/" target="_blank" class="code-link">PHP Documentation</a>
+</div>
+
+<div class="skill" data-category="gestion">
+    <img src="img/git_icon.png" alt="Git">
+    <h3>Git</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Git is a distributed version control system used to track changes in source code files during software development. It enables developers to work simultaneously on a project, merge changes, manage branches, and track code evolution.</p>
+    <a href="https://git-scm.com/" target="_blank" class="code-link">Git Documentation</a>
+</div>
+
+<div class="skill" data-category="software">
+    <img src="img/rstudio_icon.png" alt="RStudio">
+    <h3>RStudio</h3>
+    <span class="skill-level">Level: Beginner</span>
+    <p>RStudio is an Integrated Development Environment (IDE) for the R programming language, designed for data scientists and analysts. It offers features such as script editing, project management, data visualization, and support for R packages.</p>
+    <a href="https://www.rstudio.com/" target="_blank" class="code-link">RStudio Official Site</a>
+</div>
+
+<div class="skill" data-category="language">
+    <img src="img/r_icon.png" alt="R">
+    <h3>R</h3>
+    <span class="skill-level">Level: Beginner</span>
+    <p>R is an open-source programming language specifically designed for statistical and graphical analysis. It offers a wide range of packages for various statistical and data science applications. RStudio is the most popular Integrated Development Environment (IDE) for R, providing a user-friendly interface for script editing, data visualization, and more.</p>
+    <a href="https://www.r-project.org/" target="_blank" class="code-link">R Official Site</a>
+</div>
+
+<div class="skill" data-category="framework">
+    <img src="img/symfony_icon.png" alt="Symfony">
+    <h3>Symfony</h3>
+    <span class="skill-level">Level: Intermediate</span>
+    <p>Symfony is an open-source PHP framework used to develop robust and high-performance web applications. It follows best practices in web development and offers an MVC (Model-View-Controller) architecture. Symfony is known for its flexibility, reusable components, and extensive community. Developers can create scalable and maintainable applications using Symfony components, which are also used by other major PHP projects like Laravel.</p>
+    <a href="https://symfony.com/" target="_blank" class="code-link">Symfony Official Site</a>
+</div>
+<!-- Add more skills as needed -->
+</div>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2024 Alexis Chabanne. All rights reserved.</p>
+</footer>
+
+<script src="Javascript/script.js"></script> <!-- Make sure to have a valid link to your JavaScript file -->
+</body>
+
+</html>
