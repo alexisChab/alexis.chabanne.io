@@ -1,0 +1,314 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <label for="menu-cb" class="menu-label">
+            <svg viewBox="0 0 32 32" fill="#666">
+                <rect x="0" y="4" rx="3" ry="3" width="32" height="3" />
+                <rect x="0" y="14" rx="3" ry="3" width="32" height="3" />
+                <rect x="0" y="24" rx="3" ry="3" width="32" height="3" />
+            </svg>
+        </label>
+        <input type="checkbox" id="menu-cb" class="menu-cb">
+        <nav class="menu-nav">
+            <ul>
+                <li class="menu-item"><a href="#about_me">Qui suis-je ? </a></li>
+                <li class="menu-item"><a href="#skills">Mes compétences</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#projects" class="dropbtn">Projets</a>
+                    <div class="dropdown-content">
+                        <a href="#project1">Outil de validation de versions</a>
+                        <a href="#project2">Wiki de sport</a>
+                        <a href="#project3">Jeux ludo éducatif</a>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="#cursus_cv">Cursus</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+                <li class="menu-item">
+                    <a href="https://github.com/lexinhio"><img class="logo_media" src="img/logo_github.png" alt="Github"></a>
+                </li>
+                <li class="menu-item dropdown">
+                <a href="#" class="dropbtn">Langue</a>
+                    <div class="dropdown-content">
+                        <a href="index.php">Français</a>
+                        <a href="index_english.php">Anglais</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="about_me" class="scroll-animate">
+    <h1 class="centered-title">Qui suis-je ?</h1>
+    <div class="presentation-container">
+        <img src="img/getPhotonortmal.jpg" alt="Votre Photo" class="presentation-photo">
+        <div class="presentation-text">
+            <p>Je m'appelle Alexis Chabanne, étudiant en BUT 3 Informatique, actuellement en échange universitaire à l'UQAC dans le cadre d’une bi-diplomation. Passionné par l’informatique et le sport, je cherche à allier ces deux domaines à travers mes projets. Ce que j'ai trouvé en étant athlète universitaire. 
+
+                Depuis mon enfance, je pratique le football et depuis deux ans je parcours la course à pied, et je suis aujourd’hui athlète universitaire au Québec. Ces expériences m’ont appris la discipline, la persévérance et l’esprit d’équipe, des valeurs essentielles aussi bien dans le sport que dans l’informatique.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="scroll-animate">
+    <h1 class="centered-title">Mes Compétences</h1>
+    <div class="skills-container">
+    <div class="skill" data-category="langage">
+    <img src="img/java_icon.png" alt="Java">
+    <h3>Java</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>Java est un langage de programmation populaire, principalement utilisé pour le développement d'applications backend, mais aussi pour les applications mobiles (Android) et les applications de bureau. Il est connu pour sa portabilité, sa sécurité et sa robustesse. Java est également largement utilisé dans les systèmes embarqués, les jeux vidéo, et les applications financières.</p>
+    <a href="https://www.oracle.com/java/" target="_blank" class="code-link">Documentation Java</a>
+</div>
+        <div class="skill" data-category="basededonne" id="PostgresSQL">
+    <img src="img/postgresql_icon.png" alt="PostgreSQL">
+    <h3>PostgreSQL</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>PostgreSQL est un système de gestion de base de données relationnelles open source et puissant. Connu pour sa conformité aux normes SQL, sa fiabilité et ses fonctionnalités avancées telles que le support des transactions, la réplication et la gestion des contraintes, PostgreSQL est utilisé dans de nombreux environnements professionnels et critiques.</p>
+    <a href="https://www.postgresql.org/docs/" target="_blank" class="code-link">Documentation PostgreSQL</a>
+</div>
+<div class="skill" data-category="langage" id="Python">
+    <img src="img/python_icon.svg" alt="Python">
+    <h3>Python</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>Python est un langage de programmation polyvalent, réputé pour sa simplicité et sa lisibilité. Il est utilisé dans divers domaines tels que le développement web, l'analyse de données, l'intelligence artificielle, l'automatisation des tâches, et plus encore. Python encourage une syntaxe claire et concise, ce qui en fait un choix populaire parmi les développeurs débutants et expérimentés.</p>
+    <a href="https://www.python.org/" target="_blank" class="code-link">Documentation Python</a>
+</div>
+<div class="skill" data-category="langage">
+    <img src="img/php_icon.svg" alt="PHP">
+    <h3>PHP</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>PHP (Hypertext Preprocessor) est un langage de script côté serveur largement utilisé pour le développement web. Il est principalement utilisé pour générer des pages web dynamiques, traiter des formulaires, gérer des sessions utilisateur, interagir avec des bases de données et bien plus encore.</p>
+    <a href="https://www.php.net/" target="_blank" class="code-link">Documentation PHP</a>
+</div>
+<div class="skill" data-category="edition" id="JSON">
+    <img src="img/json_icon.png" alt="JSON">
+    <h3>JSON</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>JSON (JavaScript Object Notation) est un format léger d'échange de données, facile à lire et à écrire pour les humains, ainsi qu'à interpréter et à générer pour les machines. Il est basé sur un sous-ensemble du langage de programmation JavaScript, mais est indépendant de tout langage. JSON est largement utilisé dans les applications web pour le transfert et le stockage de données.</p>
+    <a href="https://www.json.org/" target="_blank" class="code-link">Documentation JSON</a>
+</div>
+<div class="skill" data-category="gestion">
+    <img src="img/git_icon.png" alt="Git">
+    <h3>Git</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>Git est un système de contrôle de version distribué utilisé pour suivre les modifications dans les fichiers de code source pendant le développement logiciel. Il permet aux développeurs de travailler simultanément sur un même projet, de fusionner des modifications, de gérer des branches et de suivre l'évolution du code.</p>
+    <a href="https://git-scm.com/" target="_blank" class="code-link">Documentation Git</a>
+</div>
+    </div>
+    <div class="see-more">
+        <a href="competence.php" class=" competence_btn" >Voir toutes mes compétences</a>
+    </div>
+</section>
+<section id="projects" class="scroll-animate">
+    <h2 class="centered-title">Projets</h2>
+    <div class="projets-container">
+        <div id="project1" class="projet">
+            <h3>Outil de validation de versions</h3>
+            <span class="category-label">Catégorie : Projet professionnel</span>
+            <div class="langages">
+                <a class="language-span" href="#Python">Python</a>
+                <a class="language-span" href="competence.php#PowerShell">PowerShell</a>
+                <a class="language-span"href="#JSON">JSON</a>
+            </div>
+            <p>Développement et mise en place d’un outil permettant la validation des versions logicielles du frontal pour imprimantes numériques.</p>
+            <img src="img/tmp_afbd2017-3f41-4692-bfb7-354a495cad6d.png" alt="Image du Projet 1">
+            <button class="toggle-details">Voir projet</button>
+            <div class="details">
+                <p>J'ai éffectué un stage au sein de Tech Research, une entreprise spécialisée dans les solutions pour imprimantes numériques. L'objectif principal de mon stage était de développer et de mettre en place un outil permettant la validation des versions logicielles du frontal pour ces imprimantes. Ce projet visait à automatiser et simplifier les tests existants tout en intégrant de nouveaux tests plus poussés, le tout accompagné d'une interface utilisateur facilitant l'utilisation de ces tests.
+                Le travail accompli durant ce stage a permis de réécrire les tests existants en PowerShell* et de développer de nouveaux tests avancés en Python*. Une interface utilisateur a été conçue pour améliorer l'accessibilité et l'efficacité des tests. Ce nouvel outil permet de créer, gérer et exécuter des suites de tests à intervalles réguliers, facilitant ainsi la validation des nouvelles versions logicielles des imprimantes numériques.</p>
+            </div>
+        </div>
+        <div id="project2" class="projet">
+            <h3>Wiki de sport</h3>
+            <span class="category-label">Catégorie : Projet personel</span>
+            <div class="langages">
+                <a class="language-span" href="competence.php#HTML">HTML</a>
+                <a class="language-span" href="competence.php#CSS">CSS</a>
+                <a class="language-span" href="competence.php#JS">JavaScript</a>
+                <a class="language-span" href="competence.php#PHP">PHP</a>
+            </div>
+            <p>Ce projet personnel est un site web sportif multifonctionnel combinant un site informatif type Wikipédia, un réseau social et un suivi en direct des résultats sportifs. Codé en PHP, HTML, CSS, et JavaScript, il permet aux passionnés de sport de se retrouver et d'échanger autour de leur passion.</p>
+            <img src="img/chaine-sport-illustration-appareil-technologie-internet-diffuse-video-ligne-ecran-accueil-activite-entrainement-programme-telephonie-numerique-divertissement-moderne-concept-communication_109722-2472.avif" alt="Image du Projet 2">
+            <button class="toggle-details">Voir projet</button>
+            <div class="details">
+                <p>Ce projet est une initiative personnelle visant à créer un site web sportif multifonctionnel. Il combine les caractéristiques d'un site informatif type Wikipédia, d'un réseau social, et d'un site de suivi en direct des résultats sportifs. Codé en PHP, HTML, CSS, et JavaScript, il permet aux passionnés de sport de se retrouver, partager, et échanger autour de leur passion. Le site comporte plusieurs pages dédiées : une page d'histoire et d'événements sportifs, un palmarès, des actualités, des résultats en direct, des forums de discussion, des profils utilisateurs, et une section sur les compétitions à venir, incluant les compétitions amateurs. La complexité du projet réside dans la gestion des bases de données SQL, ce qui prolonge sa réalisation sur plusieurs années.</p>
+            </div>
+        </div>
+        <div id="project3" class="projet">
+            <h3>Jeux ludo éducatif</h3>
+            <span class="category-label">Catégorie : Projet universitaire</span>
+            <div class="langages">
+                <a class="language-span" href="competence.php#PHP">PHP</a>
+                <a class="language-span" href="#PostgresSQL">PostgresSQL</a>
+                <a class="language-span" href="competence.php#JS">JavaScript</a>
+                <a class="language-span" href="competence.php#HTML">HTML</a>
+                <a class="language-span" href="competence.php#CSS">CSS</a>
+            </div>
+            <p>TerraForma est un jeu éducatif immersif pour les élèves de 3ème, leur permettant de terraformer une planète tout en renforçant leurs connaissances en SVT à travers des quiz et des mini-jeux. Le projet se distingue par son approche semi-agile, sa gestion rigoureuse des risques et sa conception centrée sur la sécurité des données.</p>
+            <img src="img/logo_terraforma_avec_ecriture.png" alt="Image du Projet 3">
+            <button class="toggle-details">Voir projet</button>
+            <div class="details">
+                <p>Le projet TerraForma ambitionne de transformer l'enseignement des SVT pour les élèves de troisième en un voyage éducatif interactif et motivant. En jouant le rôle d'astronautes, les élèves collaborent pour terraformer une planète à travers des quiz et des mini-jeux, intégrant ainsi l'apprentissage curriculaire avec des éléments ludiques et collaboratifs. Ce jeu immersif encourage non seulement l'apprentissage des sciences, mais aussi le développement de compétences sociales et de résolution de problèmes chez les élèves.</p>
+            </div>
+        </div>
+    </div>
+    <div class="see-more">
+        <a href="pageProjet.php" class="projet_btn">Voir tous les projets</a>
+    </div>
+</section>
+
+<section id="cursus_cv" class="scroll-animate">
+    <h1 class="centered-title">Mon Cursus / CV</h1>
+    
+    <div class="cv_cursus-content">
+        <div class="cursus_item">
+            <h3>Formation</h3>
+            <ul>
+                <li>
+                    <strong>Baccalauréat infomatique</strong> - UQAC, Chicoutimi
+                    <br>Depuis août 2024
+                    <br>Parcours développement d’applications
+                </li>
+                <li>
+                    <strong>BUT Informatique</strong> - IUT2, département informatique, UGA Grenoble
+                    <br>Depuis août 2022
+                    <br>Parcours développement d’applications
+                </li>
+                <li>
+                    <strong>Diplôme du Baccalauréat</strong> - Lycée Polyvalent Marlioz, Aix-Les-Bains
+                    <br>De septembre 2019 à juin 2022
+                    <br>Mention très bien, spécialité : Mathématiques / Numérique et sciences informatiques
+                </li>
+            </ul>
+        </div>
+
+        <div class="cv_item">
+            <h3>Expériences Professionnelles</h3>
+            <ul>
+                <li>
+                    <strong>Sport Expert, Chicoutimi</strong> - Job étudiant
+                    <br>Septembre 2024 -  
+                    <br>Conseiller chaussures
+                </li>
+                <li>
+                    <strong>Tech Research Tagg Informatique, ALbens</strong> - Stage
+                    <br>Avril 2024 - Juin 2024
+                    <br>Stage de fin d'année en développement
+                </li>
+                <li>
+                    <strong>E.Leclerc, Drumettaz-Clarafond</strong> - CDD étudiants
+                    <br>Juillet 2022 - Août 2022 / Juillet 2023 - Août 2023
+                    <br>Mise en Rayon
+                </li>
+            </ul>
+        </div>
+
+        <div class="cv_item">
+            <h3>Loisirs</h3>
+            <ul>
+                <li>Course à pied (marathon, trail, athlétisme)</li>
+                <li>Football</li>
+                <li>Ski</li>
+                <li>Triathlon</li>
+                <li>Cyclisme</li>
+            </ul>
+        </div>
+
+        <div class="cv_item">
+            <h3>Mon CV</h3>
+            <p><a href="CV_Chabanne_Alexis.pdf" target="_blank" class="btn-cv">Télécharger mon CV</a></p>
+        </div>
+    </div>
+</section>
+
+        <section class="paragraph-contenu scroll-animate" id="contact">
+            <h1 class="centered-title">Contactez-moi</h1>
+            <form id="contact-form">
+                <div>
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                </div>
+                <div>
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Envoyer</button>
+                </div>
+                <p class="email-link">
+        <a href="mailto:alexis.chab73@gmail.com">Envoyer un e-mail directement</a>
+    </p>
+    <div id="message-container">
+    <p id="success-message" class="message success">✅ Votre message a bien été envoyé !</p>
+    <p id="error-message" class="message error">❌ Une erreur est survenue, veuillez réessayer.</p>
+</div>
+            </form>
+           
+        </section>
+    </main>
+    <script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Empêche la redirection
+
+    let formData = new FormData(this);
+    let messageContainer = document.getElementById("message-container");
+    let successMessage = document.getElementById("success-message");
+    let errorMessage = document.getElementById("error-message");
+
+    // Annule le display: flex avant affichage
+    messageContainer.style.display = "block"; // S'assurer qu'il apparaît
+
+    // Masquer les messages avant l'envoi
+    successMessage.style.display = "none";
+    errorMessage.style.display = "none";
+
+    fetch("https://formspree.io/f/myzkdblk", {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" }
+    })
+    .then(response => {
+        if (response.ok) {
+            successMessage.style.display = "block"; // Afficher le message de succès
+            this.reset(); // Vider le formulaire
+        } else {
+            errorMessage.style.display = "block"; // Afficher le message d'erreur
+        }
+    })
+    .catch(() => {
+        errorMessage.style.display = "block"; // Afficher une erreur réseau
+    });
+});
+
+</script>
+
+
+
+    <footer>
+        <p>&copy; 2025 Alexis Chabanne. Tous droits réservés.</p>
+    </footer>
+    <script src="Javascript/stylle.js"></script>
+    <script src="Javascript/menu_Hamburger.js"></script>
+</body>
+
+</html>

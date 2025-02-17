@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tous Mes Projets</title>
+    <link rel="stylesheet" href="styleProject.css">
+</head>
+<body>
+    <header>
+            <label for="menu-cb" class="menu-label">
+                <svg viewBox="0 0 32 32" fill="#666">
+                    <rect x="0" y="4" rx="3" ry="3" width="32" height="3" />
+                    <rect x="0" y="14" rx="3" ry="3" width="32" height="3" />
+                    <rect x="0" y="24" rx="3" ry="3" width="32" height="3" />
+                </svg>
+            </label>
+            <input type="checkbox" id="menu-cb" class="menu-cb">
+            <nav class="menu-nav">
+                <ul>
+                    <li class="menu-item"><a href="index.php#about_me">Qui suis-je ?</a></li>
+                    <li class="menu-item"><a href="index.php#skills">Mes compétences</a></li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="dropbtn">Projets</a>
+                    </li>
+                    <li class="menu-item"><a href="index.php#cursus_cv">Cursus</a></li>
+                    <li class="menu-item"><a href="index.php#contact">Contact</a></li>
+                    <li class="menu-item">
+                        <a href="https://github.com/lexinhio"><img class="logo_media" src="img/logo_github.png" alt="Github"></a>
+                    </li>
+                    <li class="menu-item dropdown">
+                <a href="#" class="dropbtn">language</a>
+                    <div class="dropdown-content">
+                        <a href="pageProjet.php">Français</a>
+                        <a href="pageProjetEnglish.php">Anglais</a>
+                    </div>
+                </li>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <section id="all-projects" class="scroll-animate">
+            <h1>Tous Mes Projets</h1>
+            <ul class="filter-links">
+                <li><a href="#" class="filter-link" data-category="all">Tous</a></li>
+                <li><a href="#" class="filter-link" data-category="professionnel">Professionnel</a></li>
+                <li><a href="#" class="filter-link" data-category="universitaire">Universitaire</a></li>
+                <li><a href="#" class="filter-link" data-category="personnel">Personnel</a></li>
+            </ul>
+            <div class="projects-container">
+                <!-- Détaillez tous vos projets ici -->
+                <div class="project" data-category="professionnel">
+    <img src="img/tmp_afbd2017-3f41-4692-bfb7-354a495cad6d.png" alt="Project 1">
+    <h3>Outil de validation de versions</h3>
+    <span class="project-lang">Technologies utilisées : Python, XML, JSON, PowerShell</span>
+    <p>Pendant mon stage chez Tech Research, entreprise spécialisée dans les imprimantes numériques et la mise sous plis, j'ai eu l'opportunité d'appliquer mes compétences en informatique acquises à l'IUT de l'UGA. Mon stage s'est déroulé du 15 avril au 5 juillet 2024 et a été dédié au développement d'un outil crucial pour valider les versions logicielles d'un frontal d'imprimante numérique.</p>
+
+    <p>Ma mission principale était de transformer une solution existante en PowerShell en une application plus flexible et intuitive, utilisant Python pour son efficacité et ses bibliothèques adaptées au développement de tests et d'interfaces utilisateurs. Grâce à Visual Studio Code, j'ai pu réécrire et optimiser le code tout en conservant une structure modulaire et claire, essentielle pour maintenir la cohérence des tests au fil des versions du contrôleur.</p>
+
+    <p>L'outil que j'ai développé permet à l'utilisateur de créer et de gérer des suites de tests à travers une interface utilisateur conviviale. La première partie de l'interface facilite la création de fichiers JSON détaillant les tests à effectuer, tandis que la seconde partie permet de naviguer dans ces fichiers pour lancer et visualiser les résultats des tests.</p>
+
+    <p>J'ai utilisé des bibliothèques Python telles que unittest pour organiser les tests par cas et par suite, lxml pour manipuler les fichiers XML nécessaires aux tests, et urllib ainsi que shutil pour gérer efficacement les ressources et les fichiers du système.</p>
+
+    <p>Ce projet m'a permis de renforcer mon autonomie en programmation tout en collaborant étroitement avec mon tuteur pour surmonter les défis techniques. La recherche et l'adaptation aux nouvelles bibliothèques ont enrichi mes compétences documentaires et techniques, tout en me confrontant à des exigences professionnelles strictes en dehors de mon environnement académique habituel.</p>
+
+    <p>Cette expérience chez Tech Research a été pour moi une immersion précieuse dans le développement logiciel appliqué, renforçant ma capacité à innover et à livrer des solutions adaptées aux besoins spécifiques d'une industrie technologique en constante évolution.</p>
+    
+    <span class="project-category">Catégorie : Projet professionnel</span>
+    <span class="project-date">Date du projet : avril-juillet 2024</span>
+</div>
+
+<div class="project" data-category="personnel" id="project1">
+    <img src="img/sport_illutstration.avif" alt="Project 2">
+    <h3>Projet wiki sport</h3>
+    <span class="project-lang">Technologies utilisées : PHP, JavaScript, CSS, HTML, MySQL</span>
+    <p>Ce projet est une initiative personnelle. L’objectif est de créer un site web qui combine les fonctions d’un site informatif à la manière de Wikipédia, d’un réseau social et d’un site de suivi des résultats sportifs en direct.</p>
+
+    <p>Le thème du site est le sport. Il est codé en PHP, HTML, CSS et JavaScript. Le site vise à rassembler une communauté de passionnés autour d’un sport, en leur offrant un espace pour se retrouver, partager et rencontrer d’autres amateurs.</p>
+
+    <p>Le site web se compose de plusieurs pages :</br>
+        Une page de type Wikipédia avec l’histoire d’un sport et ses événements marquants</br>
+        Une page palmarès avec le palmarès de chaque sport</br>
+        Une page d’actualité regroupant les actualités du sport</br>
+        Une page où l’on retrouve les résultats en direct des compétitions et matchs en cours</br>
+        Une page forum, où l’on peut partager dans plusieurs forums notre avis et échanger avec d’autres personnes autour d’un sujet sportif</br>
+        Une page profil qui affiche votre compte et profil</br>
+        Une page compétitions qui affiche les prochaines compétitions à venir et surtout les compétitions amateurs</br>
+
+    <p>Ce site internet est complexe et long à réaliser car il nécessite des bases de données en SQL et c’est pour cela que sa réalisation s’étend sur plusieurs années.</p>
+    
+    <span class="project-category">Catégorie : Projet personnel</span>
+    <span class="project-date">Date du projet : septembre 2022</span>
+</div>
+
+<div class="project" data-category="universitaire">
+    <img src="img/dépêches.avif" alt="Project 3">
+    <h3>Projets de tri de dépêches</h3>
+    <span class="project-lang">Technologies utilisées : Java</span>
+    <p>Ce projet consiste à mettre en place en une semaine des algorithmes de tri qui permette de trier une liste de dépêches selon sa catégories à l'aide d'un code écrit en langauge JAVA.<br>
+    Ce projet consiste à implémenter en une semaine des algorithmes de tri qui permettent de classer une liste de dépêches selon leur catégorie à l’aide d’un code écrit en langage Java.<br>
+    Il s’agit d’un projet universitaire en équipe de deux. Nous avions à notre disposition différentes listes de dépêches qu’il fallait trier en étant le plus efficaces. L’efficacité était jugée selon deux critères : le nombre de comparaisons et le temps d’exécution de l’algorithme. Le but était de comparer différents algorithmes de tri tels que le tri à bulle, le tri par insertion ou encore le tri fusion. Un compte rendu en anglais était aussi demandé. Il fallait rendre compte des difficultés rencontrées, des différents algorithmes et solutions testés afin d’optimiser le plus possible ainsi que l’organisation du groupe. Nous devions rédiger ce dernier dans un vocabulaire informatique. Ce projet était un petit projet qui donne un aperçu de ce que des projets d’équipe en entreprise peuvent demander.</p>
+    <span class="project-category">Catégorie : Projet universitaire</span>
+    <span class="project-date">Date du projet : mars 2023</span>
+    <div class="project-buttons">
+        <a href="https://github.com/lexinhio/Projet-approche-algorithmique/tree/main/Final2" class="code-link">Voir le code</a>
+    </div>
+</div>
+<div class="project" data-category="universitaire">
+    <img src="img/database-icon-logo-modern-line-260nw-517584376.jpg" alt="Project 4">
+    <h3>Projet de base de données</h3>
+    <span class="project-lang">Technologies utilisées : PostgreSQL</span>
+    <p>Ce projet est un projet universitaire. Il a pour objectifs de créer en travaillant par groupe de deux personnes une base de données PostgreSQL à partir de données contenues dans un fichier CSV.<br>
+    Ensuite, à l’aide de la base de données, il fallait répondre à des questions et rendre un compte rendu complété des requêtes SQL qui nous ont permis d’obtenir les informations nécessaires pour répondre aux questions.<br>
+    Les données étudiées portaient sur la catastrophe du naufrage du Titanic, plus précisément sur ses passagers, les victimes et les survivants. Tout d’abord, nous avons créé une base de données en filtrant les données utiles ou non au compte rendu et en les répartissant en différentes tables afin de pouvoir séparer par catégorie les informations.<br>
+    Il a fallu ensuite récupérer les informations précises et les calculer à partir d’informations disponibles en faisant le moins de requêtes différentes possibles. On a donc utilisé des sous-requêtes.<br>
+    Pour finir, il a fallu interpréter les requêtes et en déduire combien de personnes auraient pu être sauvées dans le meilleur des cas et pourquoi ce nombre n’a-t-il pas été atteint.</p>
+    <span class="project-category">Catégorie : Projet universitaire</span>
+    <span class="project-date">Date du projet : avril 2023</span>
+</div>
+               
+<div class="project" data-category="universitaire">
+    <img src="img/icone_site_orange.avif" alt="Project 5">
+    <h3>Projet de site web institutionnel</h3>
+    <span class="project-lang">Technologies utilisées : HTML, CSS</span>
+    <p>Ce projet est un projet universitaire. Il a pour but de créer un site web institutionnel de l’entreprise Orange1.<br>
+    Il s’est réalisé par groupe de trois personnes. Il se compose en deux parties : la première était une recherche d’informations et la rédaction d’un recueil de besoins afin d’avoir les données nécessaires au contenu du site web.<br>
+    Ce projet a demandé d’appuyer un peu plus le point sur l’environnement économique et écologique de l’entreprise2. Une maquette du site internet a été ensuite réalisée. Le site internet devait être beaucoup plus simple que le site d’Orange.<br>
+    Il devait aussi utiliser un vocabulaire adapté à des élèves de troisième.<br>
+    Ce projet consistait à réaliser comme en entreprise un site internet avec ses étapes de conception.</p>
+    <span class="project-category">Catégorie : Projet universitaire</span>
+    <span class="project-date">Date du projet : novembre 2022</span>
+    <div class="project-buttons">
+        <a href="https://lexinhio.github.io/SAE_6/Index.html" class="code-link">Voir le code</a>
+    </div>
+    
+</div>
+<div class="project" data-category="universitaire">
+    <img src="img/istockphoto-1430871384-612x612.jpg" alt="Project 5">
+    <h3>Projet d'application de création et de gestion d'évènnements de course à pied</h3>
+    <span class="project-lang">Technologies utilisées : Java, JavaFx</span>
+    <p>Il s’agit d’un projet universitaire réalisé en groupe de 5 personnes. Le concept consiste à créer de A à Z une application hors réseau de création et de gestion d’événements de course à pied. Ce projet comprend toutes les étapes, de la recherche du concept à la réalisation finale de l’application. Ce projet a nécessité un travail d’équipe important. Nous avons dû nous organiser pour nous répartir les tâches. Tout d’abord, lors de la définition des besoins et des contraintes.<br>
+    Une fois les contraintes identifiées et les besoins définis, nous avons élaboré le dossier de conception. Ce dossier contient différents diagrammes, tels que des diagrammes de cas d’utilisation, des diagrammes de classes ou encore des diagrammes de séquences. Ce dossier comprend également la description des cas d’utilisation et des scénarios alternatifs de ces cas. Tous ces diagrammes servent à définir une route à suivre dans la réalisation du projet, mais il a fallu aussi définir la gestion de la création de cette application.<br>
+    Pour cela, nous avons établi des diagrammes logiques regroupant les étapes à suivre lors d’une action de l’application, comme la saisie du nom de l’événement ou encore l’inscription d’un coureur.<br>
+    Un document de conception de l’interface a été également réalisé. Il est composé de plusieurs wireframes et de plusieurs personas.<br>
+    Grâce à tous ces documents, l’application a pu être programmée lors d’une semaine bloquée dédiée à cette action. Les fonctions et classes objet de l’application ont été codées en Java. Du JavaFX a été quant à lui utilisé pour l’interface.<br>
+    Ce projet est l’un de mes plus gros projets pour l’heure actuelle et m’a permis de découvrir le travail d’équipe avec un plus grand nombre de personnes et sur une plus longue période. J’y ai ainsi pu voir chaque étape d’une réalisation.</p>
+    <span class="project-category">Catégorie : Projet universitaire</span>
+    <span class="project-date">Date du projet : juin 2023</span>
+</div>
+<div class="project" data-category="universitaire">
+    <img src="img/logo_terraforma_avec_ecriture.png" alt="Project 7"><br>
+    <h3>Jeux ludo éducatif</h3><br>
+    <span class="project-lang">Technologies utilisées : PHP, PostgreSQL, JavaScript, HTML, CSS</span><br><br>
+    <p>TerraForma est un serious game éducatif novateur conçu spécifiquement pour les élèves de troisième en Sciences de la Vie et de la Terre (SVT). Le jeu propose une expérience immersive où les joueurs incarnent des astronautes chargés de terraformer une planète virtuelle. Cette approche permet aux élèves non seulement d'apprendre le programme de SVT de manière progressive et stimulante, mais aussi de développer des compétences de collaboration et de résolution de problèmes.</p><br>
+
+    <p>Le gameplay se structure autour de niveaux progressifs qui suivent le programme scolaire tout en intégrant des questions supplémentaires pour enrichir l'expérience d'apprentissage. Les élèves peuvent s'affronter ou travailler ensemble pour améliorer leur niveau de connaissance en SVT, gagnant ainsi des récompenses virtuelles pour embellir leur planète.</p><br>
+
+    <p>Pour assurer la sécurité et la conformité, le projet intègre des mesures strictes selon les standards du RGPD, garantissant la protection des données des utilisateurs, notamment par le chiffrement des informations sensibles et une gestion transparente du consentement des utilisateurs.</p><br>
+
+    <p>Le développement de TerraForma suit une approche semi-agile, permettant une flexibilité dans l'adaptation aux besoins changeants du projet tout en respectant des délais stricts. Chaque phase du développement est étroitement surveillée pour assurer la qualité et la conformité aux normes éducatives et légales.</p><br>
+
+    <span class="project-category">Catégorie : Projet universitaire</span><br>
+    <span class="project-date">Date du projet : novembre 2023 - janvier 2024</span><br>
+</div>
+
+<div class="project" data-category="universitaire">
+    <img src="img/stage-OPE.jpg" alt="Project 8"><br>
+    <h3>Outil de gestion d'offres de stage</h3><br>
+    <span class="project-lang">Technologies utilisées : PHP, PostgreSQL, JavaScript, HTML, CSS, Symfony, Java, XML</span><br><br>
+    <p>Ce projet vise à améliorer une application existante dédiée à la gestion des stages étudiants. Structurée autour d'un client Android, d'un service web et d'un back-office développé avec le framework Symfony, cette application permet aux étudiants de consulter les offres de stage, de postuler via l'application mobile et de suivre l'évolution de leurs candidatures. Pour les gestionnaires de stages, le back-office offre un tableau de bord détaillant la progression des étudiants dans leur recherche de stage ainsi que des statistiques pertinentes sur leurs activités.</p>
+
+    <p>Le projet a débuté par une analyse approfondie de l'application existante à travers une rétro-ingénierie du code, visant à identifier les points d'amélioration. L'optimisation de la base de données a été une priorité afin d'assurer une meilleure performance et évolutivité du système. En parallèle, des tests ont été définis pour garantir la robustesse et la fiabilité des nouvelles fonctionnalités introduites.</p>
+
+    <p>L'accent a également été mis sur l'interopérabilité et la tolérance aux fautes pour renforcer l'intégration entre les différents modules de l'application. Cette approche a permis de répondre aux critères de qualité définis, notamment ceux de la norme ISO 25000, tout en améliorant l'expérience utilisateur à travers des interfaces plus intuitives et efficaces.</p>
+
+    <p>Le projet a mobilisé une diversité de compétences telles que le développement web et mobile, la gestion de projet, ainsi que la communication interne et externe. Le respect strict des échéances et des livrables a été une priorité pour assurer le bon déroulement du projet et la satisfaction des parties prenantes.</p>
+
+    <span class="project-category">Catégorie : Projet universitaire</span><br>
+    <span class="project-date">Date du projet : avril 2024</span><br>
+</div>
+
+<div class="project" data-category="universitaire">
+    <img src="img/logo_api.png" alt="Projet 9"><br>
+    <h3>Utilisation de l'API Jikan</h3><br>
+    <span class="project-lang">Technologies utilisées : PHP, JavaScript, HTML, CSS</span><br><br>
+    <p>Lors d'un cours de développement web utilisant JavaScript, un projet portant sur l'utilisation d'une API par groupe de deux a été réalisé. Une base en PHP était fournie, et le but était d'appliquer des filtres pour rendre fonctionnelle et visuelle cette API. L'API utilisée était Jikan, avec des filtres appliqués sur la limite d'âge.</p><br>
+
+    <p>Les étudiants ont travaillé ensemble pour intégrer et utiliser efficacement les données de l'API Jikan. Le projet comprenait la conception d'une interface utilisateur attrayante et la mise en œuvre de fonctionnalités permettant de filtrer et d'afficher les résultats de manière claire et structurée.</p><br>
+
+    <p>Ce projet a permis aux étudiants de mettre en pratique leurs compétences en programmation web, en particulier en JavaScript et en PHP, tout en apprenant à manipuler et à interagir avec des API externes. L'approche collaborative a favorisé l'apprentissage de la gestion de projet et du travail d'équipe dans un contexte de développement logiciel.</p><br>
+
+    <span class="project-category">Catégorie : Projet universitaire</span><br>
+    <span class="project-date">Date du projet : avril 2023 - juin 2023</span><br>
+    <div class="project-buttons">
+        <a href="https://lexinhio.github.io/r4a10-tp-api-2024-chabanal-ferreida/" class="code-link">Voir le code</a>
+    </div>
+    
+</div>
+<div class="project" data-category="universitaire">
+    <img src="img/alien.jpg" alt="Projet 9"><br>
+    <h3>Game Jam - Monde Phéérique de l'IUT2</h3><br>
+    <span class="project-lang">Technologies utilisées : Python, Frameworks Python</span><br><br>
+    <p>Une Game Jam d'une semaine a été organisée par l'IUT lors de mes études. Le sujet de cette Game Jam était le monde phéérique de l'IUT2. Les participants devaient réaliser un jeu en Python en utilisant des frameworks Python. Nous avons créé un jeu en monde ouvert avec des mini-jeux débloquant des zones de la carte.</p><br>
+
+    <p>Le jeu combinait des éléments narratifs sur le thème de l'IUT2 avec des mécaniques de jeu interactives. Chaque mini-jeu représentait un défi unique, permettant aux joueurs de découvrir et d'explorer différentes parties du monde phéérique à mesure qu'ils progressaient.</p><br>
+
+    <p>Cette expérience a été une occasion d'appliquer les connaissances théoriques acquises en cours à la création pratique d'un jeu vidéo. Elle a également encouragé la collaboration et la créativité au sein de l'équipe, tout en renforçant les compétences en développement logiciel et en utilisation de frameworks Python.</p><br>
+
+    <span class="project-category">Catégorie : Projet universitaire</span><br>
+    <span class="project-date">Date du projet : février 2023</span><br>
+</div>
+                <!-- Ajoutez plus de projets selon vos besoins -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alexis Chabanne. Tous droits réservés.</p>
+    </footer>
+
+    <script src="Javascript/script.js"></script> <!-- Assurez-vous d'avoir un lien valide vers votre fichier JavaScript -->
+</body>
+</html>

@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <label for="menu-cb" class="menu-label">
+            <svg viewBox="0 0 32 32" fill="#666">
+                <rect x="0" y="4" rx="3" ry="3" width="32" height="3" />
+                <rect x="0" y="14" rx="3" ry="3" width="32" height="3" />
+                <rect x="0" y="24" rx="3" ry="3" width="32" height="3" />
+            </svg>
+        </label>
+        <input type="checkbox" id="menu-cb" class="menu-cb">
+        <nav class="menu-nav">
+            <ul>
+                <li class="menu-item"><a href="#about_me">About Me</a></li>
+                <li class="menu-item"><a href="#skills">My Skills</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#projects" class="dropbtn">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="#project1">Version Validation Tool</a>
+                        <a href="#project2">Sports Wiki</a>
+                        <a href="#project3">Educational Game</a>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="#cursus_cv">Education</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+                <li class="menu-item">
+                    <a href="https://github.com/lexinhio"><img class="logo_media" src="img/logo_github.png" alt="Github"></a>
+                </li>
+                <li class="menu-item dropdown">
+                <a href="#" class="dropbtn">language</a>
+                    <div class="dropdown-content">
+                        <a href="index.php">French</a>
+                        <a href="index_english.php">English</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section id="about_me" class="scroll-animate">
+    <h1 class="centered-title">About Me</h1>
+    <div class="presentation-container">
+        <img src="img/getPhotonortmal.jpg" alt="Votre Photo" class="presentation-photo">
+        <div class="presentation-text">
+        <p>My name is Alexis Chabanne, and I am a third-year Computer Science student currently studying abroad at UQAC as part of a dual-degree program. Passionate about both sports and technology, I strive to combine these two fields through my projects. What I have learned as a university athlete.
+
+            Since childhood, I have been involved in football and running, and I am now a university athlete in Quebec. These experiences have taught me discipline, perseverance, and teamwork—essential values in both sports and computer science.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="scroll-animate">
+    <h1 class="centered-title">My Skills</h1>
+    <div class="skills-container">
+    <div class="skill" data-category="langage">
+    <img src="img/java_icon.png" alt="Java">
+    <h3>Java</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Java is a popular programming language, mainly used for backend application development, but also for mobile (Android) and desktop applications. It is known for its portability, security, and robustness. Java is also widely used in embedded systems, video games, and financial applications.</p>
+    <a href="https://www.oracle.com/java/" target="_blank" class="code-link">Documentation Java</a>
+</div>
+        <div class="skill" data-category="basededonne" id="PostgresSQL">
+    <img src="img/postgresql_icon.png" alt="PostgreSQL">
+    <h3>PostgreSQL</h3>
+    <span class="skill-level">Level: Advanced</span>
+<p>PostgreSQL is a powerful open-source relational database management system. Known for its SQL compliance, reliability, and advanced features such as transaction support, replication, and constraint management, PostgreSQL is used in many professional and critical environments.</p>    <a href="https://www.postgresql.org/docs/" target="_blank" class="code-link">PostgreSQL Documentation</a>
+</div>
+<div class="skill" data-category="langage" id="Python">
+    <img src="img/python_icon.svg" alt="Python">
+    <h3>Python</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Python is a versatile programming language known for its simplicity and readability. It is used in various fields such as web development, data analysis, artificial intelligence, task automation, and more. Python encourages clear and concise syntax, making it a popular choice among both beginner and experienced developers.</p>    <a href="https://www.python.org/" target="_blank" class="code-link">Python Documentation</a>
+</div>
+<div class="skill" data-category="langage">
+    <img src="img/php_icon.svg" alt="PHP">
+    <h3>PHP</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>PHP (Hypertext Preprocessor) is a server-side scripting language widely used for web development. It is primarily used to generate dynamic web pages, process forms, manage user sessions, interact with databases, and much more.</p>    
+    <a href="https://www.php.net/" target="_blank" class="code-link">PHP Documentation</a>
+</div>
+<div class="skill" data-category="edition" id="JSON">
+    <img src="img/json_icon.png" alt="JSON">
+    <h3>JSON</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>JSON (JavaScript Object Notation) is a lightweight data interchange format, easy for humans to read and write, and for machines to parse and generate. It is based on a subset of the JavaScript programming language but is language-independent. JSON is widely used in web applications for data transfer and storage.</p>    
+    <a href="https://www.json.org/" target="_blank" class="code-link">JSON Documentation</a>
+</div>
+<div class="skill" data-category="gestion">
+    <img src="img/git_icon.png" alt="Git">
+    <h3>Git</h3>
+    <span class="skill-level">Level: Advanced</span>
+    <p>Git is a distributed version control system used to track changes in source code during software development. It allows developers to work simultaneously on the same project, merge changes, manage branches, and track code evolution.</p>    
+    <a href="https://git-scm.com/" target="_blank" class="code-link">Git Documentation</a>
+</div>
+    </div>
+    <div class="see-more">
+        <a href="competenceEnglish.php" class=" competence_btn" >See All My Skills</a>
+    </div>
+</section>
+<section id="projects" class="scroll-animate">
+    <h2 class="centered-title">Projects</h2>
+    <div class="projets-container">
+        <div id="project1" class="projet">
+            <h3>Version Validation Tool</h3>
+            <span class="category-label">Category: Professional Project</span>
+            <div class="langages">
+                <a class="language-span" href="#Python">Python</a>
+                <a class="language-span" href="competence.php#PowerShell">PowerShell</a>
+                <a class="language-span"href="#JSON">JSON</a>
+
+            </div>
+            <p>Development and implementation of a tool for validating software versions of the frontend for digital printers.</p>            
+            <img src="img/tmp_afbd2017-3f41-4692-bfb7-354a495cad6d.png" alt="Image du Projet 1">
+            <button class="toggle-details">View Project</button>
+            <div class="details">
+            <p>I completed an internship at Tech Research, a company specializing in solutions for digital printers. The main objective of my internship was to develop and implement a tool for validating software versions of the frontend for these printers. This project aimed to automate and simplify existing tests while integrating new, more advanced tests, all accompanied by a user interface facilitating the use of these tests.
+            The work done during this internship allowed rewriting existing tests in PowerShell* and developing new advanced tests in Python*. A user interface was designed to improve the accessibility and efficiency of the tests. This new tool allows creating, managing, and running test suites at regular intervals, thus facilitating the validation of new software versions for digital printers.</p>
+            </div>
+        </div>
+        <div id="project2" class="projet">
+            <h3>Sports Wiki</h3>
+            <span class="category-label">Category: Personal Project</span>
+            <div class="langages">
+                <a class="language-span" href="competence.php#HTML">HTML</a>
+                <a class="language-span" href="competence.php#CSS">CSS</a>
+                <a class="language-span" href="competence.php#JS">JavaScript</a>
+                <a class="language-span" href="competence.php#PHP">PHP</a>
+            </div>
+            <p>Creation of a website containing wiki-type content related to various sports and associated technical skills.</p>
+            <img src="img/chaine-sport-illustration-appareil-technologie-internet-diffuse-video-ligne-ecran-accueil-activite-entrainement-programme-telephonie-numerique-divertissement-moderne-concept-communication_109722-2472.avif" alt="Image du Projet 2">
+            <button class="toggle-details">View Project</button>
+            <div class="details">
+            <p>In my free time, I dedicated myself to developing a website, Sports Wiki, a wiki-type platform providing content related to various sports and associated technical skills. This project allowed me to develop my skills in web development, using HTML*, CSS*, PHP*, and MySQL*. The website offers an intuitive and user-friendly interface, allowing users to easily access information and add new content.
+            Additionally, I implemented features such as search functionalities, user registration, and login, as well as tools for editing and managing articles. This project helped me consolidate my knowledge in web development and develop my skills in user experience (UX) design.</p>            
+            </div>
+        </div>
+        <div id="project3" class="projet">
+            <h3>Educational Game</h3>
+            <span class="category-label">Category: Educational Project</span>
+            <div class="langages">
+                <a class="language-span" href="competence.php#PHP">PHP</a>
+                <a class="language-span" href="#PostgresSQL">PostgresSQL</a>
+                <a class="language-span" href="competence.php#JS">JavaScript</a>
+                <a class="language-span" href="competence.php#HTML">HTML</a>
+                <a class="language-span" href="competence.php#CSS">CSS</a>
+            </div>
+            <p>Development of an educational game for learning different algorithms through practical exercises.</p>            
+            <img src="img/logo_terraforma_avec_ecriture.png" alt="Image du Projet 3">
+            <button class="toggle-details">View Project</button>
+            <div class="details">
+            <p>During my studies at the university, I worked on a project to develop an educational game aimed at facilitating the learning of different algorithms through practical exercises. This project was created using web technologies such as HTML*, CSS*, and JavaScript*, offering an interactive and engaging interface.
+                The game presents various challenges requiring students to solve problems using the learned algorithms. Each challenge provides immediate feedback to help students identify their errors and improve their understanding. This project allowed me to consolidate my knowledge in web development and algorithmics while contributing to a tool useful for the learning of computer science students.</p>
+                        </div>
+        </div>
+    </div>
+    <div class="see-more">
+        <a href="pageProjetEnglish.php" class="projet_btn">Voir tous les projets</a>
+    </div>
+</section>
+
+<section id="cursus_cv" class="scroll-animate">
+    <h1 class="centered-title">Education</h1>
+    
+    <div class="cv_cursus-content">
+    <div class="cursus_item">
+        <h3>Education</h3>
+        <ul>
+            <li>
+                <strong>Bachelor’s Degree in Computer Science</strong> - UQAC, Chicoutimi  
+                <br>Since August 2024  
+                <br>Application Development Track  
+            </li>            
+            <li>
+                <strong>Bachelor of Technology in Computer Science</strong> - IUT2, Computer Science Department, UGA Grenoble
+                <br>Since August 2022
+                <br>Specialization in Application Development
+            </li>
+            <li>
+                <strong>High School Diploma</strong> - Lycée Polyvalent Marlioz, Aix-Les-Bains
+                <br>September 2019 to June 2022
+                <br>With honors, Specialization: Mathematics / Digital and Computer Sciences
+            </li>
+        </ul>
+    </div>
+
+    <div class="cv_item">
+        <h3>Professional Experience</h3>
+        <ul>
+            <li>
+                <strong>Sport Expert, Chicoutimi</strong> - Student job  
+                <br>September 2024 -  
+                <br>Shoe advisor  
+            </li>
+            <li>
+                <strong>Tech Research Tagg Informatique, Albens</strong> - Internship  
+                <br>April 2024 - June 2024  
+                <br>End-of-year internship in development  
+            </li>            
+            <li>
+                <strong>E.Leclerc, Drumettaz-Clarafond</strong> - Temporary Student Contracts
+                <br>July 2022 - August 2022 / July 2023 - August 2023
+                <br>Shelf Stacking
+            </li>
+        </ul>
+    </div>
+
+    <div class="cv_item">
+        <h3>Interests</h3>
+        <ul>
+            <li>Running (marathons, trail running, athletics)</li>
+            <li>Club Football</li>
+            <li>Skiing</li>
+            <li>Triathlon</li>
+            <li>Cycling</li>
+        </ul>
+    </div>
+
+    <div class="cv_item">
+        <h3>My Resume</h3>
+        <p><a href="CV_Chabanne_Alexis.pdf" target="_blank" class="btn-cv">Download my CV</a></p>
+    </div>
+</div>
+</section>
+<section class="paragraph-contenu scroll-animate" id="contact">
+    <h1 class="centered-title">Contact Me</h1>
+    <form action="contact-form" method="post">
+        <div>
+            <label for="prenom">First Name:</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Your first name" required>
+        </div>
+        <div>
+            <label for="nom">Last Name:</label>
+            <input type="text" id="nom" name="nom" placeholder="Your last name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
+        </div>
+        <div>
+            <button type="submit">Send</button>
+        </div>
+        <p class="email-link">
+            <a href="mailto:alexis.chab73@gmail.com">Send an email directly</a>
+        </p>
+        <div id="message-container">
+            <p id="success-message" class="message success">✅ Votre message a bien été envoyé !</p>
+            <p id="error-message" class="message error">❌ Une erreur est survenue, veuillez réessayer.</p>
+        </div>
+                    </form>
+</section>
+
+</main>
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Empêche la redirection
+    
+        let formData = new FormData(this);
+        let messageContainer = document.getElementById("message-container");
+        let successMessage = document.getElementById("success-message");
+        let errorMessage = document.getElementById("error-message");
+    
+        // Annule le display: flex avant affichage
+        messageContainer.style.display = "block"; // S'assurer qu'il apparaît
+    
+        // Masquer les messages avant l'envoi
+        successMessage.style.display = "none";
+        errorMessage.style.display = "none";
+    
+        fetch("https://formspree.io/f/myzkdblk", {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+        })
+        .then(response => {
+            if (response.ok) {
+                successMessage.style.display = "block"; // Afficher le message de succès
+                this.reset(); // Vider le formulaire
+            } else {
+                errorMessage.style.display = "block"; // Afficher le message d'erreur
+            }
+        })
+        .catch(() => {
+            errorMessage.style.display = "block"; // Afficher une erreur réseau
+        });
+    });
+    
+    </script>
+<footer>
+    <p>&copy; 2025 Alexis Chabanne. All rights reserved.</p>
+</footer>
+<script src="Javascript/stylle.js"></script>
+<script src="Javascript/menu_Hamburger.js"></script>
+</body>
+
+</html>
+

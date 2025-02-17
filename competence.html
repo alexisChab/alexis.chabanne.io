@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Compétences</title>
+    <link rel="stylesheet" href="styleCompetence.css">
+</head>
+
+<body>
+    <header>
+        <label for="menu-cb" class="menu-label">
+            <svg viewBox="0 0 32 32" fill="#666">
+                <rect x="0" y="4" rx="3" ry="3" width="32" height="3" />
+                <rect x="0" y="14" rx="3" ry="3" width="32" height="3" />
+                <rect x="0" y="24" rx="3" ry="3" width="32" height="3" />
+            </svg>
+        </label>
+        <input type="checkbox" id="menu-cb" class="menu-cb">
+        <nav class="menu-nav">
+            <ul>
+                <li class="menu-item"><a href="index.php#about_me">Qui suis-je ?</a></li>
+                <li class="menu-item"><a href="index.php#skills">Mes compétences</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="dropbtn">Projets</a>
+                    <div class="dropdown-content">
+                        <a href="#project1">Project 1</a>
+                        <a href="#project2">Project 2</a>
+                        <a href="#project3">Project 3</a>
+                    </div>
+                </li>
+                <li class="menu-item"><a href="index.php#contact">Contact</a></li>
+                <li class="menu-item">
+                    <a href="https://github.com/lexinhio"><img class="logo_media" src="img/logo_github.png" alt="Github"></a>
+                </li>
+                <li class="menu-item dropdown">
+                <a href="#" class="dropbtn">language</a>
+                    <div class="dropdown-content">
+                    <a href="competence.php">Français</a>
+                        <a href="competenceEnglish.php">Anglais</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="all-skills" class="scroll-animate">
+            <h1>Toutes Mes Compétences</h1>
+            <ul class="filter-links">
+                <li><a href="#" class="filter-link" data-category="all">Tous</a></li>
+                <li><a href="#" class="filter-link" data-category="edition">Editon</a></li>
+                <li><a href="#" class="filter-link" data-category="langage">Langages</a></li>
+                <li><a href="#" class="filter-link" data-category="gestion">Gestion</a></li>
+                <li><a href="#" class="filter-link" data-category="basededonne">Base de données</a></li>
+                <li><a href="#" class="filter-link" data-category="logiciel">Logiciel</a></li>
+                <li><a href="#" class="filter-link" data-category="framework">Framework</a></li>
+            </ul>
+            <div class="skills-container">
+            <div class="skill" data-category="langage" id="HTML">
+    <img src="img/html_icon.png" alt="HTML">
+    <h3>HTML</h3>
+    <p>HTML (HyperText Markup Language) est le langage standard pour créer et structurer des documents web et leurs contenus. Il définit la structure logique des informations sur une page web et comprend des éléments pour le texte, les images, les formulaires, les vidéos et plus encore.</p>
+    <span class="skill-level">Niveau : Avancé</span>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="code-link">Documentation HTML</a>
+</div>
+
+<div class="skill" data-category="langage" id="CSS">
+    <img src="img/css_icon.png" alt="CSS">
+    <h3>CSS</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>CSS (Cascading Style Sheets) est un langage utilisé pour décrire la présentation visuelle d'un document HTML. Il permet de styliser le contenu des pages web, y compris la mise en page, les couleurs, les polices, les espacements et plus encore. CSS permet également la création d'animations et d'effets interactifs.</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="code-link">Documentation CSS</a>
+</div>
+
+<div class="skill" data-category="langage" id="JS">
+    <img src="img/js_icon.png" alt="JavaScript">
+    <h3>JavaScript</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>JavaScript est un langage de programmation de haut niveau, souvent utilisé pour créer des pages web interactives et dynamiques. Il est principalement exécuté côté client dans un navigateur web, mais peut également être utilisé côté serveur avec Node.js. JavaScript offre une vaste gamme de fonctionnalités, y compris la manipulation du DOM, l'interaction avec les utilisateurs, et la gestion des données asynchrones.</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="code-link">Documentation JavaScript</a>
+</div>
+
+<div class="skill" data-category="langage">
+    <img src="img/python_icon.svg" alt="Python">
+    <h3>Python</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>Python est un langage de programmation polyvalent, réputé pour sa simplicité et sa lisibilité. Il est utilisé dans divers domaines tels que le développement web, l'analyse de données, l'intelligence artificielle, l'automatisation des tâches, et plus encore. Python encourage une syntaxe claire et concise, ce qui en fait un choix populaire parmi les développeurs débutants et expérimentés.</p>
+    <a href="https://www.python.org/" target="_blank" class="code-link">Documentation Python</a>
+</div>
+
+<div class="skill" data-category="langage">
+    <img src="img/java_icon.png" alt="Java">
+    <h3>Java</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>Java est un langage de programmation populaire, principalement utilisé pour le développement d'applications backend, mais aussi pour les applications mobiles (Android) et les applications de bureau. Il est connu pour sa portabilité, sa sécurité et sa robustesse. Java est également largement utilisé dans les systèmes embarqués, les jeux vidéo, et les applications financières.</p>
+    <a href="https://www.oracle.com/java/" target="_blank" class="code-link">Documentation Java</a>
+</div>
+
+<div class="skill" data-category="langage">
+    <img src="img/javafx_icon.png" alt="JavaFX">
+    <h3>JavaFX</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>JavaFX est une bibliothèque graphique utilisée pour créer des applications riches en Java. Elle permet de développer des interfaces utilisateur modernes avec des fonctionnalités avancées telles que les animations, les effets visuels, et la gestion des événements. JavaFX est souvent utilisé pour les applications de bureau et les interfaces utilisateur sophistiquées.</p>
+    <a href="https://openjfx.io/" target="_blank" class="code-link">Documentation JavaFX</a>
+</div>
+
+<div class="skill" data-category="langage">
+    <img src="img/cpp_icon.png" alt="C++">
+    <h3>C++</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>C++ est un langage de programmation orienté objet et bas niveau, dérivé du langage C. Il est utilisé pour développer des logiciels système, des jeux vidéo, des applications graphiques, des systèmes embarqués et plus encore. C++ offre des performances élevées et un contrôle précis sur le matériel, ce qui en fait un choix courant pour les applications nécessitant une efficacité maximale.</p>
+    <a href="https://isocpp.org/" target="_blank" class="code-link">Documentation C++</a>
+</div>
+
+<div class="skill" data-category="langage">
+    <img src="img/c_icon.png" alt="C">
+    <h3>C</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>C est un langage de programmation de bas niveau, utilisé principalement pour le développement de systèmes d'exploitation, de logiciels embarqués et d'applications nécessitant un accès direct à la mémoire matérielle. C est apprécié pour sa performance, sa portabilité et son contrôle sur le matériel.</p>
+    <a href="https://devdocs.io/c/" target="_blank" class="code-link">Documentation C</a>
+</div>
+
+<div class="skill" data-category="basededonne">
+    <img src="img/mysql_icon.png" alt="MySQL">
+    <h3>MySQL</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>MySQL est un système de gestion de base de données relationnelles open source, largement utilisé pour le stockage et la gestion de données structurées. Il est connu pour sa performance élevée, sa fiabilité et sa facilité d'utilisation, ce qui en fait un choix populaire parmi les développeurs et les organisations pour les applications web et les systèmes d'entreprise.</p>
+    <a href="https://dev.mysql.com/doc/" target="_blank" class="code-link">Documentation MySQL</a>
+</div>
+
+<div class="skill" data-category="basededonne">
+    <img src="img/postgresql_icon.png" alt="PostgreSQL">
+    <h3>PostgreSQL</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>PostgreSQL est un système de gestion de base de données relationnelles open source et puissant. Connu pour sa conformité aux normes SQL, sa fiabilité et ses fonctionnalités avancées telles que le support des transactions, la réplication et la gestion des contraintes, PostgreSQL est utilisé dans de nombreux environnements professionnels et critiques.</p>
+    <a href="https://www.postgresql.org/docs/" target="_blank" class="code-link">Documentation PostgreSQL</a>
+</div>
+
+<div class="skill" data-category="basededonne">
+    <img src="img/sqlite_icon.png" alt="SQLite">
+    <h3>SQLite</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>SQLite est un moteur de base de données SQL embarqué, léger, autonome et rapide. Il est intégré directement dans l'application hôte et ne nécessite pas de serveur distinct, ce qui le rend idéal pour les applications mobiles, les systèmes embarqués, les applications de bureau, et d'autres utilisations qui nécessitent une base de données locale.</p>
+    <a href="https://sqlite.org/docs.html" target="_blank" class="code-link">Documentation SQLite</a>
+</div>
+
+<div class="skill" data-category="edition">
+    <img src="img/xml_icon.png" alt="XML">
+    <h3>XML</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>XML (eXtensible Markup Language) est un langage de balisage conçu pour stocker et transporter des données structurées. Il est largement utilisé pour l'échange de données entre systèmes hétérogènes et pour la configuration de documents complexes. XML est extensible et permet de définir des structures de données personnalisées à l'aide de schémas.</p>
+    <a href="https://www.w3.org/XML/" target="_blank" class="code-link">Documentation XML</a>
+</div>
+
+<div class="skill" data-category="langage" id="PowerShell">
+    <img src="img/powershell_icon.png" alt="PowerShell">
+    <h3>PowerShell</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>PowerShell est un langage de script développé par Microsoft, principalement utilisé pour l'automatisation des tâches et la gestion de la configuration système. Il offre une interface en ligne de commande (CLI) robuste et un environnement de script interactif, idéal pour l'administration système et le déploiement</p>
+    <a href="https://docs.microsoft.com/en-us/powershell/" target="_blank" class="code-link">Documentation PowerShell</a>
+</div>
+<div class="skill" data-category="edition">
+    <img src="img/json_icon.png" alt="JSON">
+    <h3>JSON</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>JSON (JavaScript Object Notation) est un format léger d'échange de données, facile à lire et à écrire pour les humains, ainsi qu'à interpréter et à générer pour les machines. Il est basé sur un sous-ensemble du langage de programmation JavaScript, mais est indépendant de tout langage. JSON est largement utilisé dans les applications web pour le transfert et le stockage de données.</p>
+    <a href="https://www.json.org/" target="_blank" class="code-link">Documentation JSON</a>
+</div>
+
+<div class="skill" data-category="gestion">
+    <img src="img/notion_icon.png" alt="Notion">
+    <h3>Notion</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>Notion est une application tout-en-un qui permet de prendre des notes, de gérer des projets, de collaborer avec des équipes et plus encore. Il combine les fonctionnalités d'un wiki, d'un gestionnaire de tâches, d'un tableau kanban et d'un outil de prise de notes, offrant une flexibilité et une personnalisation élevées pour l'organisation personnelle et professionnelle.</p>
+    <a href="https://www.notion.so/" target="_blank" class="code-link">Site officiel Notion</a>
+</div>
+
+<div class="skill" data-category="gestion">
+    <img src="img/figma-logo-512.webp" alt="Figma">
+    <h3>Figma</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>Figma est une application de design d'interface utilisateur basée sur le web, utilisée pour la création d'interfaces utilisateur, de maquettes, de prototypes et de collaborations en temps réel. Connu pour sa facilité d'utilisation et sa capacité à permettre la conception collaborative, Figma est largement adopté par les designers et les équipes de développement pour créer des expériences utilisateur modernes.</p>
+    <a href="https://www.figma.com/" target="_blank" class="code-link">Site officiel Figma</a>
+</div>
+
+<div class="skill" data-category="gestion">
+    <img src="img/logo_github.png" alt="GitHub">
+    <h3>GitHub</h3>
+    <p>GitHub est une plateforme de développement collaboratif de logiciels basée sur Git. Il offre des fonctionnalités de gestion de version, de collaboration, de suivi des problèmes et d'intégration continue. GitHub est largement utilisé pour l'hébergement de code source, la gestion de projet, et la contribution à des projets open source.</p>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <a href="https://github.com/" target="_blank" class="code-link">Site officiel GitHub</a>
+</div>
+
+<div class="skill" data-category="gestion">
+    <img src="img/gitlab_icon.png" alt="GitLab">
+    <h3>GitLab</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>GitLab est une alternative à GitHub, offrant une gestion de version décentralisée et des fonctionnalités de développement collaboratif. Il propose également des outils de CI/CD (Continuous Integration/Continuous Deployment), un wiki intégré et des options de gestion des paquets. GitLab est souvent préféré pour les environnements d'entreprise et pour ceux qui recherchent une solution de développement self-hosted.</p>
+    <a href="https://about.gitlab.com/" target="_blank" class="code-link">Site officiel GitLab</a>
+</div>
+
+<div class="skill" data-category="gestion">
+    <img src="img/azure_icon.png" alt="Microsoft Azure">
+    <h3>Azure</h3>
+    <span class="skill-level">Niveau : débutant</span>
+    <p>Microsoft Azure est une plateforme de cloud computing proposée par Microsoft. Elle offre une large gamme de services pour le calcul, le stockage, la base de données, l'analytique, la sécurité et bien plus encore. Azure permet aux développeurs de créer, de gérer et de déployer des applications sur un réseau mondial de centres de données gérés par Microsoft.</p>
+    <a href="https://azure.microsoft.com/" target="_blank" class="code-link">Site officiel Microsoft Azure</a>
+</div>
+<div class="skill" data-category="logiciel">
+    <img src="img/vscode_icon.png" alt="Visual Studio Code">
+    <h3>Visual Studio Code</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>Visual Studio Code est un éditeur de code léger, puissant et gratuit développé par Microsoft. Il prend en charge de nombreux langages de programmation et offre des fonctionnalités telles que la coloration syntaxique, l'autocomplétion, les débogages intégrés, la gestion des extensions et bien plus encore.</p>
+    <a href="https://code.visualstudio.com/" target="_blank" class="code-link">Site officiel Visual Studio Code</a>
+</div>
+
+<div class="skill" data-category="logiciel">
+    <img src="img/pyzo_icon.png" alt="Pyzo">
+    <h3>Pyzo</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>Pyzo est un environnement de développement intégré (IDE) spécialement conçu pour Python. Il offre un éditeur de code interactif, la gestion de l'environnement Python, des outils pour la visualisation de données scientifiques et la compatibilité avec les bibliothèques scientifiques telles que NumPy et Matplotlib.</p>
+    <a href="https://pyzo.org/" target="_blank" class="code-link">Site officiel Pyzo</a>
+</div>
+
+<div class="skill" data-category="logiciel">
+    <img src="img/visual_paradigm_icon.png" alt="Visual Paradigm">
+    <h3>Visual Paradigm</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>Visual Paradigm est un outil de modélisation et de conception UML avancé utilisé pour la modélisation visuelle des systèmes logiciels. Il permet la création de diagrammes UML, la gestion des exigences, la conception d'architecture logicielle et le génération de code.</p>
+    <a href="https://www.visual-paradigm.com/" target="_blank" class="code-link">Site officiel Visual Paradigm</a>
+</div>
+
+<div class="skill" data-category="logiciel">
+    <img src="img/intellij_icon.png" alt="IntelliJ IDEA">
+    <h3>IntelliJ IDEA</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>IntelliJ IDEA est un environnement de développement intégré (IDE) développé par JetBrains pour Java, Kotlin, Groovy et Scala. Il offre des fonctionnalités avancées telles que l'analyse de code statique, la refactoring intelligent, le support de version control, et une large gamme de plugins pour améliorer la productivité du développeur.</p>
+    <a href="https://www.jetbrains.com/idea/" target="_blank" class="code-link">Site officiel IntelliJ IDEA</a>
+</div>
+
+<div class="skill" data-category="logiciel">
+    <img src="img/clion_icon.png" alt="CLion">
+    <h3>CLion</h3>
+    <span class="skill-level">Niveau : Intermédiare</span>
+    <p>CLion est un environnement de développement intégré (IDE) de JetBrains conçu principalement pour le développement en C et C++. Il offre un éditeur de code intelligent, la prise en charge du débogage, des outils de refactorisation, et une intégration harmonieuse avec CMake et d'autres outils de développement.</p>
+    <a href="https://www.jetbrains.com/clion/" target="_blank" class="code-link">Site officiel CLion</a>
+</div>
+
+<div class="skill" data-category="logiciel">
+    <img src="img/notepadplusplus_icon.png" alt="Notepad++">
+    <h3>Notepad++</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>Notepad++ est un éditeur de texte et de code source gratuit pour Windows. Il prend en charge plusieurs langages de programmation, offre des fonctionnalités d'édition avancées telles que la coloration syntaxique, l'autocomplétion, le support multi-onglets, et la personnalisation via des plugins.</p>
+    <a href="https://notepad-plus-plus.org/" target="_blank" class="code-link">Site officiel Notepad++</a>
+</div>
+<div class="skill" data-category="langage" id="PHP">
+    <img src="img/php_icon.svg" alt="PHP">
+    <h3>PHP</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>PHP (Hypertext Preprocessor) est un langage de script côté serveur largement utilisé pour le développement web. Il est principalement utilisé pour générer des pages web dynamiques, traiter des formulaires, gérer des sessions utilisateur, interagir avec des bases de données et bien plus encore.</p>
+    <a href="https://www.php.net/" target="_blank" class="code-link">Documentation PHP</a>
+</div>
+<div class="skill" data-category="gestion">
+    <img src="img/git_icon.png" alt="Git">
+    <h3>Git</h3>
+    <span class="skill-level">Niveau : Avancé</span>
+    <p>Git est un système de contrôle de version distribué utilisé pour suivre les modifications dans les fichiers de code source pendant le développement logiciel. Il permet aux développeurs de travailler simultanément sur un même projet, de fusionner des modifications, de gérer des branches et de suivre l'évolution du code.</p>
+    <a href="https://git-scm.com/" target="_blank" class="code-link">Documentation Git</a>
+</div>
+<div class="skill" data-category="logiciel">
+    <img src="img/rstudio_icon.png" alt="RStudio">
+    <h3>RStudio</h3>
+    <span class="skill-level">Niveau : Débutant</span>
+    <p>RStudio est un environnement de développement intégré (IDE) pour le langage de programmation R, conçu pour les scientifiques de données et les analystes. Il offre des fonctionnalités telles que l'édition de script, la gestion de projet, la visualisation de données, et le support pour les packages R.</p>
+    <a href="https://www.rstudio.com/" target="_blank" class="code-link">Site officiel RStudio</a>
+</div>
+<div class="skill" data-category="langage">
+    <img src="img/r_icon.png" alt="R">
+    <h3>R</h3>
+    <span class="skill-level">Niveau : Débutant</span>
+    <p>R est un langage de programmation open-source spécialement conçu pour l'analyse statistique et graphique. Il offre une large gamme de packages pour diverses applications statistiques et de data science. RStudio est l'environnement de développement intégré (IDE) le plus populaire pour R, offrant une interface conviviale pour l'édition de scripts, la visualisation de données et bien plus encore.</p>
+    <a href="https://www.r-project.org/" target="_blank" class="code-link">Site officiel R</a>
+</div>
+<div class="skill" data-category="framework">
+    <img src="img/symfony_icon.png" alt="Symfony">
+    <h3>Symfony</h3>
+    <span class="skill-level">Niveau : Intermédiaire</span>
+    <p>Symfony est un framework PHP open-source utilisé pour développer des applications web robustes et performantes. Il suit les meilleures pratiques du développement web et propose une architecture MVC (Modèle-Vue-Contrôleur). Symfony est connu pour sa flexibilité, ses composants réutilisables et sa vaste communauté. Les développeurs peuvent créer des applications évolutives et maintenables en utilisant les composants de Symfony, qui sont également utilisés par d'autres grands projets PHP comme Laravel.</p>
+    <a href="https://symfony.com/" target="_blank" class="code-link">Site officiel Symfony</a>
+</div>
+                <!-- Ajoutez plus de compétences selon vos besoins -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alexis Chabanne. Tous droits réservés.</p>
+    </footer>
+
+    <script src="Javascript/script.js"></script> <!-- Assurez-vous d'avoir un lien valide vers votre fichier JavaScript -->
+</body>
+
+</html>

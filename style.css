@@ -1,0 +1,761 @@
+/* Réinitialiser les styles par défaut du navigateur */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+
+/* Retirer les pastilles avant les items des listes */
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #1f1f1f; /* Fond sombre */
+  font-family: Arial, sans-serif;
+  color: #fff; /* Texte blanc */
+}
+
+a {
+  color: #006dcc;
+  font-size: 32px;
+  text-decoration: none;
+  color: #ddd; /* Lien blanc */
+}
+
+.menu-label,
+.menu-cb {
+  cursor: pointer;
+  appearance: none;
+  position: fixed;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  right: 30px;
+  z-index: 4;
+}
+
+.menu-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 70%;
+  max-width: 300px;
+  padding-top: 110px;
+  text-align: right;
+  background: #333; /* Menu foncé */
+  z-index: 2;
+  transform: translateX(100%);
+  transition: transform 0.2s linear;
+  overflow-y: auto;
+}
+
+.menu-item {
+  padding: .5em 20px;
+  border-top: 1px solid #444; /* Bordure du menu plus sombre */
+  position: relative;
+}
+
+.menu-item .dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: #333; /* Fond de menu plus foncé */
+  position: static;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.dropdown-content a {
+  color: #ddd; /* Texte du menu blanc */
+  padding: 12px 16px;
+  text-decoration: none;
+  flex-grow: 1;
+  text-size-adjust: auto;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  background-color: #444; /* Couleur de fond au survol du menu plus sombre */
+}
+
+.menu-item.dropdown:hover .dropdown-content {
+  max-height: 200px;
+  transition: max-height 0.5s ease-in;
+  background: #333; /* Fond de menu plus foncé */
+}
+
+.menu-cb:checked ~ .menu-nav {
+  transform: translateX(0);
+}
+
+.logo_media {
+  width: 10%;
+  height: 10%;
+}
+
+.paragraph-contenu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+/* Styles des sections */
+#projects {
+  background-color: #333; /* Fond de section plus foncé */
+  color: #ddd; /* Texte blanc */
+}
+
+#about_me {
+  background-color: #222; /* Fond de section plus foncé */
+  color: #ddd; /* Texte blanc */
+}
+
+#cursus_cv {
+  background-color: #444; /* Fond de section plus foncé */
+  color: #ddd; /* Texte blanc */
+}
+
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+section.scrolled {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+section p, section ul {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #222; /* Fond de pied de page plus foncé */
+  color: #ddd; /* Texte blanc */
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Ajouter une ombre au texte des sections */
+section h2, section p, section ul {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Boutons de projet */
+.projet a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #006dcc;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.projet a:hover {
+  background-color: #005bb5;
+}
+
+/* Effet de zoom sur les images de projet */
+.projet img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.projet img:hover {
+  transform: scale(1.05);
+}
+
+/* Styles pour la section de présentation */
+.presentation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.presentation-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+
+.presentation-text {
+  text-align: left;
+}
+
+.presentation-text h1, .presentation-text h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Ajuster la taille des images de projet */
+.projet img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.projet img:hover {
+  transform: scale(1.05);
+}
+
+/* Styles pour le formulaire de contact */
+#contact {
+  margin-top: 2em;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #f9f9f9; /* Fond blanc cassé */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000; /* Texte noir */
+}
+
+#contact form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact form label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #333; /* Texte sombre */
+}
+
+#contact form input, #contact form textarea {
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333; /* Texte sombre */
+  background-color: #fff; /* Fond des champs */
+  font-size: 1em; /* Taille de la police */
+  max-width: 100%; /* Assure que la largeur des champs ne dépasse pas celle du formulaire */
+}
+
+#contact form textarea {
+  resize: vertical; /* Permet seulement le redimensionnement vertical */
+}
+
+#contact form input::placeholder, #contact form textarea::placeholder {
+  color: #888; /* Couleur des placeholders */
+}
+
+#contact form button {
+  padding: 0.75em;
+  color: #fff;
+  background-color: #006dcc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#contact form button:hover {
+  background-color: #005bb5;
+}
+.details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  text-align: justify;
+}
+
+/* Affichage des détails du projet */
+.details.expanded {
+  max-height: 1000px; /* Ajustez en fonction de la quantité de contenu */
+}
+
+/* Boutons pour afficher/masquer les détails */
+.toggle-details {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #006dcc;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.toggle-details:hover {
+  background-color: #005bb5;
+}
+.language-span {
+  display: inline-block;
+  background-color: #d3d3d3; /* Couleur de fond gris clair */
+  color: #000; /* Couleur du texte noir */
+  padding: 5px 10px; /* Espace intérieur */
+  border-radius: 20px; /* Bordure arrondie */
+  margin: 5px; /* Espace extérieur */
+  font-size: 14px; /* Taille de la police */
+  font-weight: bold; /* Texte en gras */
+}
+a.language-span {
+  display: inline-block;
+  background-color: #d3d3d3; /* Couleur de fond gris clair */
+  color: #000; /* Couleur du texte noir */
+  padding: 5px 10px; /* Espace intérieur */
+  border-radius: 20px; /* Bordure arrondie */
+  margin: 5px; /* Espace extérieur */
+  font-size: 14px; /* Taille de la police */
+  font-weight: bold; /* Texte en gras */
+}
+a.language-span:hover {
+  display: inline-block;
+  background-color: #555; /* Couleur de fond gris clair */
+  color: #000; /* Couleur du texte noir */
+  padding: 5px 10px; /* Espace intérieur */
+  border-radius: 20px; /* Bordure arrondie */
+  margin: 5px; /* Espace extérieur */
+  font-size: 14px; /* Taille de la police */
+  font-weight: bold; /* Texte en gras */
+}
+#skills {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+#skills h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill {
+  flex: 1 1 200px;
+  max-width: 500px;
+  min-width:350px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 480px;
+  max-height: 600px;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.skill h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.skill p {
+  font-size: 1em;
+  color: #777;
+}
+
+/* Media Queries pour la responsivité */
+@media (max-width: 768px) {
+  .skills-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill {
+      max-width: 90%;
+  }
+}
+.see-more {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.see-more .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.see-more .btn:hover {
+  background-color: #0056b3;
+}
+/* Ajoutez cette classe pour centrer les titres */
+.centered-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+/* Si ce n'est pas déjà fait, assurez-vous que le titre dans la section #skills est centré de cette manière */
+#skills h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #333;
+}
+/* Styles de base pour la section des projets */
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer le titre et le bouton */
+  gap: 20px;
+  padding: 20px; /* Ajout d'un padding pour l'espace autour */
+}
+
+/* Style pour le titre */
+#projects .centered-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Conteneur des projets */
+#projects .projets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%; /* Pour que les projets occupent toute la largeur disponible */
+}
+
+.skill .skill-level {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #888;
+  text-align: center;
+  font-weight: bold;
+}
+/* Styles pour chaque projet */
+.projet {
+  background-color: #fff; /* Couleur de fond pour les projets */
+  color: #333; /* Couleur du texte */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 600px; /* Largeur minimum pour chaque projet */
+  flex: 1 1 500px; /* Flex-grow, flex-shrink, flex-basis pour chaque projet */
+  max-width: 1000px; /* Largeur maximum pour chaque projet */
+  display: flex;
+  flex-direction: column; /* Alignement vertical des éléments enfants */
+  gap: 10px; /* Espacement entre les éléments */
+  align-items: center;
+}
+
+.projet img {
+  width: 100%;
+  height: 250px;
+  object-fit:contain;
+  transition: transform 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projet img:hover {
+  transform: scale(1.05);
+}
+
+/* Ajustez les boutons et détails */
+.projet .toggle-details {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #6c757d;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  align-self: center; /* Centre le bouton horizontalement */
+}
+
+.projet .toggle-details:hover {
+  background-color: #5a6268;
+}
+
+.projet .details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.projet .details.expanded {
+  max-height: 1000px; /* Ajustez en fonction de la quantité de contenu */
+}
+
+
+
+/* Style pour le bouton "Voir tous les projets" */
+.see-more {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.see-more .btn {
+  padding: 10px 20px;
+  background-color: #006dcc;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.see-more .btn:hover {
+  background-color: #005bb5;
+}
+.email-link a {
+  color: black; /* Couleur du texte */
+  font-size: 16px; /* Taille du texte */
+  text-decoration: none; /* Supprimer le soulignement */
+}
+
+.email-link a:hover {
+  text-decoration: underline;
+   /* Souligner le lien au survol */
+}
+.email-link{
+  text-align:center
+}
+.category-label {
+  font-weight: bold;
+  color: #d3d3d3;;
+  margin-top: 10px;/* Espacement en haut des étiquettes de catégorie */
+}
+/* Section CV et Cursus */
+#cursus_cv {
+  background-color: #2c2c2c; /* Fond sombre légèrement différent */
+  color: #ddd; /* Texte blanc */
+  padding: 3rem 2rem; /* Espacement intérieur */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ombre portée */
+  margin: 2rem 0; /* Espacement extérieur */
+  max-width: 1200px; /* Largeur maximale */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cursus_cv .centered-title {
+  text-align: center; /* Centrer le titre */
+  font-size: 2.5rem; /* Taille du titre */
+  margin-bottom: 1.5rem; /* Espacement en bas du titre */
+}
+
+#cursus_cv .cv_cursus-content {
+  display: flex; /* Utiliser le flexbox */
+  flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+  justify-content: space-between; /* Espacer les éléments */
+  gap: 2rem; /* Espace entre les éléments */
+  text-align: center; /* Centrer le texte dans les éléments */
+}
+
+.cv_item, .cursus_item {
+  background-color: #3c3c3c; /* Fond légèrement plus clair */
+  padding: 1.5rem; /* Espacement intérieur */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre portée */
+  flex: 1 1 45%; /* Taille flexible des éléments */
+  max-width: 48%; /* Largeur maximale des éléments */
+}
+
+.cv_item h3, .cursus_item h3 {
+  font-size: 1.8rem; /* Taille du titre secondaire */
+  margin-bottom: 1rem; /* Espacement en bas du titre */
+}
+
+.cv_item p, .cursus_item p {
+  font-size: 1rem; /* Taille du texte */
+  line-height: 1.5; /* Hauteur de ligne */
+}
+
+.cv_item ul, .cursus_item ul {
+  margin-top: 1rem; /* Espacement en haut de la liste */
+}
+
+.cv_item li, .cursus_item li {
+  margin-bottom: 0.5rem; /* Espacement en bas des éléments de liste */
+}
+
+/* Bouton pour le CV */
+.btn-cv {
+  display: inline-block; /* Le bouton s'affiche en ligne */
+  padding: 0.75rem 1.5rem; /* Espacement intérieur du bouton */
+  background-color: #ddd; /* Couleur de fond blanc cassé/gris clair */
+  color: #333; /* Couleur du texte noir */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Coins arrondis */
+  text-decoration: none; /* Pas de soulignement */
+  font-size: 1rem; /* Taille du texte */
+  font-weight: bold; /* Texte en gras */
+  transition: background-color 0.3s ease; /* Transition douce pour le changement de couleur */
+}
+
+.btn-cv:hover {
+  background-color: #bbb; /* Couleur de fond au survol (gris plus foncé) */
+}
+
+/* Médias queries pour l'adaptabilité */
+@media (max-width: 768px) {
+  .cv_item, .cursus_item {
+    flex: 1 1 100%; /* Taille flexible des éléments sur mobile */
+    max-width: 100%; /* Largeur maximale sur mobile */
+  }
+}
+
+
+#about_me {
+  background-color: #2c2c2c; /* Fond sombre légèrement différent */
+  color: #ddd; /* Texte blanc */
+  padding: 3rem 2rem; /* Espacement intérieur */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ombre portée */
+  margin: 2rem 0; /* Espacement extérieur */
+  max-width: 1200px; /* Largeur maximale */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about_me .centered-title {
+  text-align: center; /* Centrer le titre */
+  font-size: 2.5rem; /* Taille du titre */
+  margin-bottom: 1.5rem; /* Espacement en bas du titre */
+}
+
+#about_me .presentation-container {
+  display: flex; /* Utiliser le flexbox */
+  flex-direction: column; /* Colonnes pour disposer les éléments */
+  align-items: center; /* Centrer horizontalement */
+  gap: 20px; /* Espacement entre les éléments */
+}
+
+#about_me .presentation-photo {
+  width: 150px; /* Taille de la photo */
+  height: 150px;
+  border-radius: 50%; /* Forme ronde */
+  object-fit: cover; /* Couvrir la zone */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+#about_me .presentation-text {
+  text-align: left; /* Alignement du texte */
+  max-width: 1200px;
+  min-width: 600px; /* Largeur maximale */
+  margin: 0 auto; /* Centrer horizontalement */
+}
+
+#about_me .presentation-text h2 {
+  font-size: 2em; /* Taille du sous-titre */
+  color: #fff; /* Couleur du texte */
+  margin-bottom: 10px; /* Espacement en bas */
+}
+
+#about_me .presentation-text p {
+  font-size: 1.25em; /* Taille du texte */
+  line-height: 1.6; /* Hauteur de ligne */
+  color: #fff; /* Couleur du texte */
+  text-align:justify
+}
+.code-link {
+  display: inline-block;
+  padding: 10px 20px; /* Ajuster la taille du bouton */
+  background-color: #007bff; /* Couleur de fond */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Taille de police */
+  background-color: #6c757d;
+}
+
+.code-link:hover {
+  background-color: #5a6268;
+}
+.competence_btn{
+  background-color: #6c757d;
+  font-size: 25px;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.competence_btn:hover {
+  background-color: #5a6268;
+}
+.projet_btn{
+  background-color: #ddd;
+  font-size: 25px;
+  padding: 10px 20px;
+  color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.projet_btn:hover {
+  background-color: #5a6268;
+}
+
+#message-container {
+  display: none; /* Caché par défaut */
+  margin-top: 10px;
+  text-align: center;
+}
+
+.message {
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.success {
+  color: white;
+  background-color: green;
+  padding: 10px;
+}
+
+.error {
+  color: white;
+  background-color: red;
+  padding: 10px;
+}

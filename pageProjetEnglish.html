@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All My Projects</title>
+    <link rel="stylesheet" href="styleProject.css">
+</head>
+<body>
+    <header>
+            <label for="menu-cb" class="menu-label">
+                <svg viewBox="0 0 32 32" fill="#666">
+                    <rect x="0" y="4" rx="3" ry="3" width="32" height="3" />
+                    <rect x="0" y="14" rx="3" ry="3" width="32" height="3" />
+                    <rect x="0" y="24" rx="3" ry="3" width="32" height="3" />
+                </svg>
+            </label>
+            <input type="checkbox" id="menu-cb" class="menu-cb">
+            <nav class="menu-nav">
+                <ul>
+                    <li class="menu-item"><a href="index_english.php#about_me">Who am I?</a></li>
+                    <li class="menu-item"><a href="index_english.php#skills">My Skills</a></li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="dropbtn">Projects</a>
+                    </li>
+                    <li class="menu-item"><a href="index_english.php#cursus_cv">Cursus</a></li>
+                    <li class="menu-item"><a href="index_english.php#contact">Contact</a></li>
+                    <li class="menu-item">
+                        <a href="https://github.com/lexinhio"><img class="logo_media" src="img/logo_github.png" alt="Github"></a>
+                    </li>
+                    <li class="menu-item dropdown">
+                <a href="#" class="dropbtn">language</a>
+                    <div class="dropdown-content">
+                    <a href="pageProjet.php">French</a>
+                        <a href="pageProjetEnglish.php">English</a>
+                    </div>
+                </li>
+                </ul>
+            </nav>
+    </header>
+
+
+<main>
+    <section id="all-projects" class="scroll-animate">
+        <h1>All My Projects</h1>
+        <ul class="filter-links">
+            <li><a href="#" class="filter-link" data-category="all">All</a></li>
+            <li><a href="#" class="filter-link" data-category="professional">Professional</a></li>
+            <li><a href="#" class="filter-link" data-category="academic">Academic</a></li>
+            <li><a href="#" class="filter-link" data-category="personal">Personal</a></li>
+        </ul>
+        <div class="projects-container">
+            <!-- Detail all your projects here -->
+            <div class="project" data-category="professional">
+<img src="img/tmp_afbd2017-3f41-4692-bfb7-354a495cad6d.png" alt="Project 1">
+<h3>Version Validation Tool</h3>
+<span class="project-lang">Technologies used: Python, XML, JSON, PowerShell</span>
+<p>During my internship at Tech Research, a company specializing in digital printers and mail inserting machines, I had the opportunity to apply my computer science skills acquired at the IUT of UGA. My internship lasted from April 15 to July 5, 2024, and was dedicated to developing a crucial tool for validating software versions of a digital printer front end.</p>
+
+<p>My main mission was to transform an existing PowerShell solution into a more flexible and intuitive application, using Python for its efficiency and libraries suitable for developing tests and user interfaces. Thanks to Visual Studio Code, I was able to rewrite and optimize the code while maintaining a modular and clear structure, essential for keeping test consistency across controller versions.</p>
+
+<p>The tool I developed allows the user to create and manage test suites through a user-friendly interface. The first part of the interface facilitates the creation of JSON files detailing the tests to be performed, while the second part allows navigation through these files to launch and view test results.</p>
+
+<p>I used Python libraries such as unittest to organize tests by case and suite, lxml to manipulate XML files necessary for the tests, and urllib as well as shutil to efficiently manage system resources and files.</p>
+
+<p>This project allowed me to enhance my programming autonomy while closely collaborating with my tutor to overcome technical challenges. Research and adaptation to new libraries enriched my documentation and technical skills while confronting me with strict professional requirements outside my usual academic environment.</p>
+
+<p>This experience at Tech Research was a valuable immersion in applied software development, strengthening my ability to innovate and deliver solutions tailored to the specific needs of a constantly evolving tech industry.</p>
+
+<span class="project-category">Category: Professional Project</span>
+<span class="project-date">Project date: April-July 2024</span>
+
+</div>
+<div class="project" data-category="personal" id="project1">
+    <img src="img/sport_illutstration.avif" alt="Project 2">
+    <h3>Wiki Sport Project</h3>
+    <span class="project-lang">Technologies used: PHP, JavaScript, CSS, HTML, MySQL</span>
+    <p>This project is a personal initiative. The goal is to create a website that combines the functions of an informative site like Wikipedia, a social network, and a live sports results tracking site.</p>
+
+less
+
+<p>The theme of the site is sports. It is coded in PHP, HTML, CSS, and JavaScript. The site aims to gather a community of enthusiasts around a sport, offering them a space to meet, share, and connect with other fans.</p>
+
+<p>The website consists of several pages:</br>
+    A Wikipedia-style page with the history of a sport and its significant events</br>
+    A palmares page with the records of each sport</br>
+    A news page gathering the latest sports news</br>
+    A page showing live results of ongoing competitions and matches</br>
+    A forum page, where users can share their opinions and interact with others on a sports-related topic</br>
+    A profile page displaying your account and profile</br>
+    A competitions page showing upcoming competitions, especially amateur ones</br>
+
+<p>This website is complex and time-consuming to create as it requires SQL databases, which is why its realization extends over several years.</p>
+
+<span class="project-category">Category: Personal Project</span>
+<span class="project-date">Project date: September 2022</span>
+
+</div>
+<div class="project" data-category="academic">
+    <img src="img/dépêches.avif" alt="Project 3">
+    <h3>Dispatch Sorting Projects</h3>
+    <span class="project-lang">Technologies used: Java</span>
+    <p>This project involves implementing sorting algorithms in one week to sort a list of dispatches by category using code written in Java. <br>
+    It is an academic project done in a team of two. We had various lists of dispatches that needed to be sorted efficiently. Efficiency was judged based on two criteria: the number of comparisons and the execution time of the algorithm. The goal was to compare different sorting algorithms such as bubble sort, insertion sort, and merge sort. An English report was also required, detailing the difficulties encountered, the different algorithms and solutions tested to optimize them as much as possible, and the group's organization. We had to write this report using computer science vocabulary. This project provided a glimpse of what team projects in a company can require.</p>
+    <span class="project-category">Category: Academic Project</span>
+    <span class="project-date">Project date: March 2023</span>
+    <div class="project-buttons">
+        <a href="https://github.com/lexinhio/Projet-approche-algorithmique/tree/main/Final2" class="code-link">View the code</a>
+    </div>
+</div>
+<div class="project" data-category="academic">
+    <img src="img/database-icon-logo-modern-line-260nw-517584376.jpg" alt="Project 4">
+    <h3>Database Project</h3>
+    <span class="project-lang">Technologies used: PostgreSQL</span>
+    <p>This is an academic project. It aims to create a PostgreSQL database from data contained in a CSV file, working in groups of two. <br>
+    Then, using the database, we had to answer questions and submit a report with the SQL queries that provided the necessary information to answer those questions. <br>
+    The data studied concerned the Titanic disaster, specifically its passengers, victims, and survivors. First, we created a database by filtering the useful data and organizing it into different tables to categorize the information. <br>
+    Next, we retrieved precise information and calculated it from available data, minimizing the number of different queries. We used subqueries for this. <br>
+    Finally, we had to interpret the queries and deduce how many people could have been saved under the best conditions and why this number was not achieved.</p>
+    <span class="project-category">Category: Academic Project</span>
+    <span class="project-date">Project date: April 2023</span>
+</div>
+<div class="project" data-category="academic">
+    <img src="img/icone_site_orange.avif" alt="Project 5">
+    <h3>Analysis of a Professional Site</h3>
+    <span class="project-lang">Technologies used: HTML/CSS</span>
+    <p>This academic project aims to analyze a professional site of our choice and create a report on it. <br>
+    We had to analyze the different HTML and CSS components, understanding their functionalities and logic. <br>
+    We also had to identify potential flaws in the website's HTML and CSS code and propose improvements. <br>
+    Additionally, we had to test the site on various devices (computers, tablets, phones) to observe and report differences in rendering and responsiveness.</p>
+    <span class="project-category">Category: Academic Project</span>
+    <span class="project-date">Project date: January 2023</span>
+    <div class="project-buttons">
+        <a href="https://lexinhio.github.io/SAE_6/Index.html" class="code-link">Voir le code</a>
+    </div>
+</div>
+<div class="project" data-category="academic">
+    <img src="img/istockphoto-1430871384-612x612.jpg" alt="Project 5">
+    <h3>Running Event Creation and Management Application Project</h3>
+    <span class="project-lang">Technologies used: Java, JavaFx</span>
+    <p>This is a university project completed by a group of 5 people. The concept involves creating an offline application for creating and managing running events from scratch. This project encompasses all stages, from concept research to the final realization of the application. It required significant teamwork and organization to distribute tasks among team members. Initially, we defined the requirements and constraints.<br>
+    Once the constraints were identified and the requirements defined, we developed the design document. This document includes various diagrams, such as use case diagrams, class diagrams, and sequence diagrams. It also contains the description of use cases and alternative scenarios for these cases. All these diagrams served to define a roadmap for the project's realization, and we also had to establish the management of the application's creation.<br>
+    To do this, we created logical diagrams outlining the steps to follow during an action within the application, such as entering the event name or registering a runner.<br>
+    An interface design document was also created, consisting of several wireframes and personas.<br>
+    Thanks to all these documents, the application was programmed during a dedicated one-week sprint. The functions and object classes of the application were coded in Java, while JavaFX was used for the interface.<br>
+    This project is one of my largest projects to date and allowed me to experience teamwork with a larger group of people over a longer period. I was able to see each stage of the project's realization.</p>
+    <span class="project-category">Category: Academic Project</span>
+    <span class="project-date">Project date: June 2023</span>
+</div>
+<div class="project" data-category="academic">
+    <img src="img/logo_terraforma_avec_ecriture.png" alt="Project 7"><br>
+    <h3>Educational Game</h3><br>
+    <span class="project-lang">Technologies used: PHP, PostgreSQL, JavaScript, HTML, CSS</span><br><br>
+    <p>TerraForma is an innovative educational serious game designed specifically for ninth-grade students in Life and Earth Sciences (SVT). The game offers an immersive experience where players take on the roles of astronauts tasked with terraforming a virtual planet. This approach not only helps students learn the SVT curriculum in an engaging and progressive manner but also develops their collaboration and problem-solving skills.</p><br>
+
+vbnet
+
+<p>The gameplay is structured around progressive levels that follow the school curriculum while incorporating additional questions to enrich the learning experience. Students can compete against each other or work together to improve their SVT knowledge, earning virtual rewards to enhance their planet.</p><br>
+
+<p>To ensure security and compliance, the project incorporates strict measures in line with GDPR standards, ensuring the protection of user data through encryption of sensitive information and transparent management of user consent.</p><br>
+
+<p>The development of TerraForma follows a semi-agile approach, allowing flexibility to adapt to the changing needs of the project while adhering to strict deadlines. Each phase of development is closely monitored to ensure quality and compliance with educational and legal standards.</p><br>
+
+<span class="project-category">Category: Academic Project</span><br>
+<span class="project-date">Project date: November 2023 - January 2024</span><br>
+
+</div>
+<div class="project" data-category="academic">
+    <img src="img/logo_api.png" alt="Project 9"><br>
+    <h3>Internship Offer Management Tool</h3><br>
+    <span class="project-lang">Technologies used: PHP, PostgreSQL, JavaScript, HTML, CSS, Symfony, Java, XML</span><br><br>
+    <p>This project aims to improve an existing application dedicated to managing student internships. Structured around an Android client, a web service, and a back-office developed with the Symfony framework, this application allows students to view internship offers, apply via the mobile app, and track the progress of their applications. For internship managers, the back-office provides a dashboard detailing students' progress in their internship search as well as relevant statistics on their activities.</p>
+
+vbnet
+
+<p>The project began with an in-depth analysis of the existing application through reverse engineering of the code to identify improvement points. Optimizing the database was a priority to ensure better system performance and scalability. Concurrently, tests were defined to ensure the robustness and reliability of the new features introduced.</p>
+
+<p>Emphasis was also placed on interoperability and fault tolerance to strengthen integration between the various application modules. This approach met the defined quality criteria, including those of the ISO 25000 standard, while improving the user experience through more intuitive and efficient interfaces.</p>
+
+<p>The project involved a diversity of skills such as web and mobile development, project management, as well as internal and external communication. Strict adherence to deadlines and deliverables was a priority to ensure the smooth execution of the project and stakeholder satisfaction.</p>
+
+<span class="project-category">Category: Academic Project</span><br>
+<span class="project-date">Project date: April 2024</span><br>
+<div class="project-buttons">
+        <a href="https://lexinhio.github.io/r4a10-tp-api-2024-chabanal-ferreida/" class="code-link">Voir le code</a>
+    </div>
+</div>
+<div class="project" data-category="university">
+    <img src="img/alien.jpg" alt="Project 9"><br>
+    <h3>Game Jam - AlienInfo</h3><br>
+    <span class="project-lang">Technologies used: Python, Python Frameworks</span><br><br>
+    <p>A one-week Game Jam was organized by the IUT during my studies. The theme of this Game Jam was the enchanted world of IUT2. Participants were tasked with creating a game in Python using Python frameworks. We developed an open-world game with mini-games unlocking areas of the map.</p><br>
+
+    <p>The game combined narrative elements about IUT2 with interactive gameplay mechanics. Each mini-game presented a unique challenge, allowing players to discover and explore different parts of the enchanted world as they progressed.</p><br>
+
+    <p>This experience provided an opportunity to apply theoretical knowledge gained in classes to the practical creation of a video game. It also fostered collaboration and creativity within the team, while enhancing skills in software development and use of Python frameworks.</p><br>
+
+    <span class="project-category">Category: University Project</span><br>
+    <span class="project-date">Project Dates: February 2023</span><br>
+</div>
+</div>
+        </section>
+    </main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="Javascript/script.js"></script>
+
+</body>
+</html>
