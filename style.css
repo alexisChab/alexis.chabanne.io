@@ -679,7 +679,7 @@ a.language-span:hover {
 #about_me .presentation-text {
   text-align: left; /* Alignement du texte */
   max-width: 1200px;
-  min-width: 600px; /* Largeur maximale */
+   /* Largeur maximale */
   margin: 0 auto; /* Centrer horizontalement */
 }
 
@@ -693,7 +693,8 @@ a.language-span:hover {
   font-size: 1.25em; /* Taille du texte */
   line-height: 1.6; /* Hauteur de ligne */
   color: #fff; /* Couleur du texte */
-  text-align:justify
+  text-align:justify;
+  width:100%
 }
 .code-link {
   display: inline-block;
