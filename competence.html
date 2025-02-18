@@ -54,12 +54,22 @@
                 <li><a href="#" class="filter-link" data-category="langage">Langages</a></li>
                 <li><a href="#" class="filter-link" data-category="gestion">Gestion</a></li>
                 <li><a href="#" class="filter-link" data-category="basededonne">Base de données</a></li>
-                <li><a href="#" class="filter-link" data-category="logiciel">Logiciel</a></li>
-                <li><a href="#" class="filter-link" data-category="framework">Framework</a></li>
+                <li><a href="#" class="filter-link" data-category="logiciel">IDE</a></li>
                 <li><a href="#" class="filter-link" data-category="methodologie">Méthodologie</a></li>
             </ul>
+            <!-- Sous-menu pour filtrer les langages et frameworks -->
+            <div id="sub-menu" class="sub-menu" style="display: none;">
+                <button class="sub-menu-btn" onclick="filterSubCategory('all')">Tous</button>
+                <button class="sub-menu-btn" onclick="filterSubCategory('web')">Web</button>
+                <button class="sub-menu-btn" onclick="filterSubCategory('mobile')">Mobile</button>
+                <button class="sub-menu-btn" onclick="filterSubCategory('backend')">Backend</button>
+                <button class="sub-menu-btn" onclick="filterSubCategory('script')">Script</button>
+                <button class="sub-menu-btn" onclick="filterSubCategory('datascience')">Science des données</button>
+                <button class="sub-menu-btn" onclick="filterSubCategory('framework')">Framework</button>
+            </div>
+            
             <div class="skills-container">
-            <div class="skill" data-category="langage" id="HTML">
+            <div class="skill" data-category="langage" id="HTML" data-sub-category="web">
     <img src="img/html_icon.png" alt="HTML">
     <h3>HTML</h3>
     <p>HTML (HyperText Markup Language) est le langage standard pour créer et structurer des documents web et leurs contenus. Il définit la structure logique des informations sur une page web et comprend des éléments pour le texte, les images, les formulaires, les vidéos et plus encore.</p>
@@ -67,7 +77,7 @@
     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="code-link">Documentation HTML</a>
 </div>
 
-<div class="skill" data-category="langage" id="CSS">
+<div class="skill" data-category="langage" id="CSS" data-sub-category="web">
     <img src="img/css_icon.png" alt="CSS">
     <h3>CSS</h3>
     <span class="skill-level">Niveau : Intermédiare</span>
@@ -75,14 +85,14 @@
     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="code-link">Documentation CSS</a>
 </div>
 
-<div class="skill" data-category="langage" id="JS">
+<div class="skill" data-category="langage" id="JS" data-sub-category="web backend">
     <img src="img/js_icon.png" alt="JavaScript">
     <h3>JavaScript</h3>
     <span class="skill-level">Niveau : Avancé</span>
     <p>JavaScript est un langage de programmation de haut niveau, souvent utilisé pour créer des pages web interactives et dynamiques. Il est principalement exécuté côté client dans un navigateur web, mais peut également être utilisé côté serveur avec Node.js. JavaScript offre une vaste gamme de fonctionnalités, y compris la manipulation du DOM, l'interaction avec les utilisateurs, et la gestion des données asynchrones.</p>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="code-link">Documentation JavaScript</a>
 </div>
-<div class="skill" data-category="langage">
+<div class="skill" data-category="langage" data-sub-category="web script datascience">
     <img src="img/Python-logo-notext.png" alt="Python">
     <h3>Python</h3>
     <span class="skill-level">Niveau : Avancé</span>
@@ -90,7 +100,7 @@
     <a href="https://www.python.org/" target="_blank" class="code-link">Documentation Python</a>
 </div>
 
-<div class="skill" data-category="langage">
+<div class="skill" data-category="langage" data-sub-category="mobile backend">
     <img src="img/java_icon.png" alt="Java">
     <h3>Java</h3>
     <span class="skill-level">Niveau : Avancé</span>
@@ -98,7 +108,7 @@
     <a href="https://www.oracle.com/java/" target="_blank" class="code-link">Documentation Java</a>
 </div>
 
-<div class="skill" data-category="langage">
+<div class="skill" data-category="langage" data-sub-category="mobile framework">
     <img src="img/javafx_icon.png" alt="JavaFX">
     <h3>JavaFX</h3>
     <span class="skill-level">Niveau : Intermédiare</span>
@@ -106,7 +116,7 @@
     <a href="https://openjfx.io/" target="_blank" class="code-link">Documentation JavaFX</a>
 </div>
 
-<div class="skill" data-category="langage">
+<div class="skill" data-category="langage" data-sub-category="script backend datascience">
     <img src="img/cpp_icon.png" alt="C++">
     <h3>C++</h3>
     <span class="skill-level">Niveau : Intermédiare</span>
@@ -114,7 +124,7 @@
     <a href="https://isocpp.org/" target="_blank" class="code-link">Documentation C++</a>
 </div>
 
-<div class="skill" data-category="langage">
+<div class="skill" data-category="langage" data-sub-category="backend">
     <img src="img/c_icon.png" alt="C">
     <h3>C</h3>
     <span class="skill-level">Niveau : Intermédiare</span>
@@ -154,7 +164,7 @@
     <a href="https://www.w3.org/XML/" target="_blank" class="code-link">Documentation XML</a>
 </div>
 
-<div class="skill" data-category="langage" id="PowerShell">
+<div class="skill" data-category="langage" id="PowerShell" data-sub-category="script">
     <img src="img/powershell_icon.png" alt="PowerShell">
     <h3>PowerShell</h3>
     <span class="skill-level">Niveau : Intermédiare</span>
@@ -224,7 +234,7 @@
     <a href="https://pyzo.org/" target="_blank" class="code-link">Site officiel Pyzo</a>
 </div>
 
-<div class="skill" data-category="logiciel">
+<div class="skill" data-category="gestion">
     <img src="img/visual_paradigm_icon.png" alt="Visual Paradigm">
     <h3>Visual Paradigm</h3>
     <span class="skill-level">Niveau : Intermédiare</span>
@@ -255,7 +265,7 @@
     <p>Notepad++ est un éditeur de texte et de code source gratuit pour Windows. Il prend en charge plusieurs langages de programmation, offre des fonctionnalités d'édition avancées telles que la coloration syntaxique, l'autocomplétion, le support multi-onglets, et la personnalisation via des plugins.</p>
     <a href="https://notepad-plus-plus.org/" target="_blank" class="code-link">Site officiel Notepad++</a>
 </div>
-<div class="skill" data-category="langage" id="PHP">
+<div class="skill" data-category="langage" id="PHP" data-sub-category="web backend">
     <img src="img/image_php.png" alt="PHP">
     <h3>PHP</h3>
     <span class="skill-level">Niveau : Avancé</span>
@@ -276,14 +286,14 @@
     <p>RStudio est un environnement de développement intégré (IDE) pour le langage de programmation R, conçu pour les scientifiques de données et les analystes. Il offre des fonctionnalités telles que l'édition de script, la gestion de projet, la visualisation de données, et le support pour les packages R.</p>
     <a href="https://www.rstudio.com/" target="_blank" class="code-link">Site officiel RStudio</a>
 </div>
-<div class="skill" data-category="langage">
+<div class="skill" data-category="langage" data-sub-category="datascience">
     <img src="img/r_icon.png" alt="R">
     <h3>R</h3>
     <span class="skill-level">Niveau : Débutant</span>
     <p>R est un langage de programmation open-source spécialement conçu pour l'analyse statistique et graphique. Il offre une large gamme de packages pour diverses applications statistiques et de data science. RStudio est l'environnement de développement intégré (IDE) le plus populaire pour R, offrant une interface conviviale pour l'édition de scripts, la visualisation de données et bien plus encore.</p>
     <a href="https://www.r-project.org/" target="_blank" class="code-link">Site officiel R</a>
 </div>
-<div class="skill" data-category="framework">
+<div class="skill" data-category="langage" data-sub-category="framework backend">
     <img src="img/symfony_icon.png" alt="Symfony">
     <h3>Symfony</h3>
     <span class="skill-level">Niveau : Intermédiaire</span>
@@ -297,21 +307,21 @@
     <p>MongoDB est une base de données NoSQL orientée documents, conçue pour la scalabilité et la flexibilité. Elle est souvent utilisée pour les applications modernes, notamment dans le développement web et mobile.</p>
     <a href="https://www.mongodb.com/" target="_blank" class="code-link">Documentation MongoDB</a>
 </div>
-<div class="skill" data-category="framework">
+<div class="skill" data-category="langage" data-sub-category="mobile framework">
     <img src="img/jetpack_compose_icon.png" alt="Jetpack Compose">
     <h3>Jetpack Compose</h3>
     <span class="skill-level">Niveau : Débutant</span>
     <p>Jetpack Compose est un framework UI moderne pour Android, basé sur Kotlin. Il simplifie la création d'interfaces utilisateur déclaratives et interactives avec moins de code et une meilleure performance.</p>
     <a href="https://developer.android.com/jetpack/compose" target="_blank" class="code-link">Documentation Jetpack Compose</a>
 </div>
-<div class="skill" data-category="langage">
+<div class="skill" data-category="langage" data-sub-category="mobile backend">
     <img src="img/kotlin_icon.png" alt="Kotlin">
     <h3>Kotlin</h3>
     <span class="skill-level">Niveau : Intermédiaire</span>
     <p>Kotlin est un langage moderne, concis et sécurisé, principalement utilisé pour le développement d'applications Android. Il est également employé pour le développement backend, web et multiplateforme grâce à Kotlin Multiplatform.</p>
     <a href="https://kotlinlang.org/" target="_blank" class="code-link">Documentation Kotlin</a>
 </div>
-<div class="skill" data-category="framework">
+<div class="skill" data-category="langage" data-sub-category="web backend framework" >
     <img src="img/nodejs_icon.png" alt="Node.js">
     <h3>Node.js</h3>
     <span class="skill-level">Niveau : Avancé</span>
@@ -351,13 +361,21 @@
     <a href="https://kanbanize.com/kanban-resources/getting-started/what-is-kanban" target="_blank" class="code-link">Documentation Kanban</a>
 </div>
 
-<div class="skill" data-category="framework">
+<div class="skill" data-category="langage" data-sub-category="web framework backend">
     <img src="img/react_js.png" alt="React">
     <h3>React</h3>
     <span class="skill-level">Niveau : Avancé</span>
     <p>React est une bibliothèque JavaScript développée par Facebook pour la création d’interfaces utilisateur. Elle permet de concevoir des composants réutilisables et d’optimiser la mise à jour du DOM virtuel. React est couramment utilisé pour développer des applications web dynamiques et des applications à page unique (SPAs).</p>
     <a href="https://reactjs.org/" target="_blank" class="code-link">Documentation React</a>
 </div>
+<div class="skill" data-category="logiciel">
+    <img src="img/android_studio_icon.png" alt="Android Studio">
+    <h3>Android Studio</h3>
+    <span class="skill-level">Niveau : Intermédiaire</span>
+    <p>Android Studio est l’environnement de développement officiel pour les applications Android. Il offre des outils avancés pour la conception d’interfaces, le développement en Kotlin ou Java, ainsi que des fonctionnalités comme le débogage, l’émulation et la gestion de projets Android modernes.</p>
+    <a href="https://developer.android.com/studio" target="_blank" class="code-link">Documentation Android Studio</a>
+</div>
+
 
 
                 <!-- Ajoutez plus de compétences selon vos besoins -->
