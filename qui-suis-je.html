@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qui suis-je ? - Alexis Chabanne</title>
+  <link rel="stylesheet" href="style_who_i_am.css">
+</head>
+<body>
+
+  <header>
+    <label for="menu-cb" class="menu-label">
+        <svg viewBox="0 0 32 32" fill="black">
+            <rect x="0" y="4" rx="3" ry="3" width="32" height="3" />
+            <rect x="0" y="14" rx="3" ry="3" width="32" height="3" />
+            <rect x="0" y="24" rx="3" ry="3" width="32" height="3" />
+        </svg>
+    </label>
+    <input type="checkbox" id="menu-cb" class="menu-cb">
+    <nav class="menu-nav">
+        <ul>
+            <li class="menu-item"><a href="index.html#about_me">Qui suis-je ?</a></li>
+            <li class="menu-item"><a href="index.html#skills">Mes compétences</a></li>
+            <li class="menu-item dropdown">
+                <a href="index.html#projects" class="dropbtn">Projets</a>
+            </li>
+            <li class="menu-item"><a href="index.html#cursus_cv">Cursus</a></li>
+            <li class="menu-item"><a href="index.html#contact">Contact</a></li>
+            <li class="menu-item">
+                <a href="https://github.com/alexisChab"><img class="logo_media" src="img/logo_github.png" alt="Github"></a>
+            </li>
+            <li class="menu-item dropdown">
+        <a href="#" class="dropbtn">Language</a>
+            <div class="dropdown-content">
+                <a href="#">Français</a>
+                <a href="qui-suis-je-English.html">Anglais</a>
+            </div>
+        </li>
+        </ul>
+    </nav>
+</header>
+
+  <main class="qui-suis-je">
+    
+    <section class="presentation interactive-section" class="interactive-section" style="--bg-url: url('img/who_i_am/gala_inuk.jpg')" >
+      <div class="section-content">
+      <h2>Présentation professionnelle</h2>
+    
+      <p>
+        Je m'appelle Alexis Chabanne, diplômé d’un BUT Informatique – parcours Réalisation d’Applications : Conception, Développement, Validation – obtenu à l’IUT2 de Grenoble. J’ai réalisé ma troisième année à l’international, dans le cadre d’un échange universitaire au sein de l’UQAC (Université du Québec à Chicoutimi), dans un programme de bi-diplomation. Cette expérience m’a permis d’évoluer dans un environnement multiculturel, stimulant et exigeant, tout en consolidant mes compétences techniques et humaines.
+      </p>
+    
+      <p>
+        Mon parcours m’a permis d’aborder des domaines variés, allant du développement web et mobile à l’intelligence artificielle, en passant par la gestion de projet, la modélisation de bases de données et les environnements de déploiement. Parmi les enseignements marquants, j’ai suivi des cours en :
+      </p>
+    
+      <ul>
+        <li>Apprentissage machine pour la science des données</li>
+        <li>Technologies web avancées</li>
+        <li>Informatique mobile</li>
+        <li>Algorithmique et structures de données</li>
+        <li>Bases de données avancées (PostgreSQL, MongoDB…)</li>
+        <li>Environnements de déploiement des applications</li>
+        <li>Gestion de production et travail en équipe agile</li>
+      </ul>
+    
+      <p>
+        J’ai mis en œuvre ces compétences dans plusieurs projets, universitaires comme personnels, notamment dans le développement d’une application de gestion d’événements sportifs (“Step by Step”) ou encore d’un site communautaire autour du sport. Ce dernier croise mes deux passions : l’informatique et le sport.
+      </p>
+    
+      <p>
+        Sportif de longue date, je pratique le football en club depuis mon enfance et la course à pied (marathon, trail) depuis deux ans. Durant mon année au Québec, j’ai intégré le programme d’athlétisme universitaire, me permettant de continuer à progresser tout en développant discipline, persévérance et esprit d’équipe — des qualités fondamentales aussi bien sur le terrain qu’en entreprise.
+      </p>
+    
+      <p>
+        Admis pour la rentrée 2025 en école d’ingénieur à l’ENSIBS (École Nationale Supérieure d’Ingénieurs de Bretagne Sud), et en cours d’admission à Polytech, je souhaite approfondir mes connaissances en ingénierie des systèmes logiciels, avec une orientation vers des projets à impact, robustes et utiles.
+      </p>
+    
+      <p>
+        Je suis à l’écoute d’opportunités dans le domaine du développement logiciel, de la data science, de l’architecture applicative ou de la conception de solutions web et mobiles, en stage, alternance ou collaboration. Sérieux, curieux, adaptable et engagé, je suis prêt à relever de nouveaux défis technologiques.
+      </p>
+      </div>
+    </section>
+    
+
+    <section class="mes-passions interactive-section" style="--bg-url: url('img/who_i_am/IMG_4700.jpg')">
+      <div class="section-content">
+      <h2>Mes passions</h2>
+      <h3>Le sport</h3>
+      <!-- INTRO TEXTE SPORT -->
+      <p>
+        Le sport occupe une place importante dans ma vie, tant pour mon équilibre que pour les valeurs qu’il m’apporte. Je pratique le football depuis l’enfance, et je me suis engagé ces dernières années dans différentes disciplines comme la course à pied (route, trail, cross, athlétisme), ainsi que dans les sports d’hiver comme le ski alpin, le ski de randonnée et le ski de fond skating. Ces pratiques m’ont appris la discipline, l’endurance, la résilience et le plaisir de progresser.
+      </p>
+    
+      <!-- BOUTONS FILTRE -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="ski">Ski</button>
+        <button class="filter-btn" data-filter="course">Course à pied</button>
+      </div>
+    
+      <!-- GALERIE SPORTIVE -->
+       
+      <div class="gallery-filtered">
+        <!-- Ski -->
+        <figure class="gallery-item ski">
+          <img src="img/who_i_am/20230206_101340.jpg" alt="Ski alpin en station" />
+          <figcaption>Ski alpin pratiqué depuis l’enfance</figcaption>
+        </figure>
+        <figure class="gallery-item ski">
+          <img src="img/who_i_am/received_538541272511961.jpeg" alt="Ski de randonnée" />
+          <figcaption>Ski de randonnée : liberté et nature hors station</figcaption>
+        </figure>
+        <figure class="gallery-item ski">
+          <img src="img/who_i_am/rando_2.jpg" alt="Ski de fond skating" />
+          <figcaption>Ski de fond skating : endurance et glisse</figcaption>
+        </figure>
+    
+        <!-- Course -->
+        <figure class="gallery-item course">
+          <img src="img/who_i_am/54599168134_1982ab6b67_o.jpg" alt="Course sur route" />
+          <figcaption>Course sur route : semi-marathons, progression constante</figcaption>
+        </figure>
+        <figure class="gallery-item course">
+          <img src="img/who_i_am/_F8A1882.jpg" alt="Trail running" />
+          <figcaption>Trail running : immersion et effort en nature</figcaption>
+        </figure>
+        <figure class="gallery-item course">
+          <img src="img/who_i_am/Messenger_creation_3A24E200-A0D0-4883.jpeg" alt="Athlétisme universitaire" />
+          <figcaption>Athlétisme au Québec : performance et encadrement</figcaption>
+        </figure>
+        <figure class="gallery-item course">
+          <img src="img/who_i_am/DSC09918.jpg" alt="Course de cross" />
+          <figcaption>Cross : rythme, intensité, mental</figcaption>
+        </figure>
+      </div>
+    
+      <!-- TEXTE AUTRES PASSIONS -->
+      <div class="autres-passions">
+        <h3>Passions culturelles et personnelles</h3>
+
+    <h4>Lecture et univers fantasy</h4>
+    <p>
+      En dehors du sport, je consacre beaucoup de temps à la <strong>lecture</strong>, notamment dans les genres de la fantasy et des mythes modernes. Les œuvres de <strong>J.R.R. Tolkien</strong> et de <strong>Rick Riordan</strong> m’inspirent par leur richesse narrative, leur lien avec les mythologies, et leur puissance évocatrice.
+    </p>
+    <p>Ces lectures nourrissent ma créativité et mon imagination.</p>
+
+    <h4>Randonnée et connexion à la nature</h4>
+    <p>
+      Je pratique également la <strong>randonnée</strong>, à la fois comme activité physique douce et comme moyen de me reconnecter à la nature. C’est un prolongement naturel de ma passion pour les sports outdoor, en particulier dans les régions montagneuses.
+    </p>
+
+    <h4>Histoire et culture générale</h4>
+    <p>
+      Je m’intéresse aussi à <strong>l’histoire</strong> : grandes civilisations, contextes politiques, récits historiques et documentaires. Cette passion m’aide à prendre du recul sur l’actualité et à enrichir ma culture générale.
+    </p>
+
+    <ul>
+      <li>Univers de Tolkien</li>
+      <li>Lectures de fantasy : Tolkien, Riordan, mondes immersifs</li>
+      <li>Randonnée : connexion à la nature et équilibre</li>
+      <li>Passion pour l'histoire</li>
+      <li>Histoire : comprendre le passé pour éclairer le présent</li>
+    </ul>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="experience-internationale interactive-section" style="--bg-url: url('img/who_i_am/20241109_131555.jpg')">
+      <div class="section-content">
+      <h2>Mon année à l'international</h2>
+    
+      <p>
+        En 2024-2025, j’ai réalisé une année universitaire à l’étranger dans le cadre d’un programme de bi-diplomation, au sein de l’<strong>Université du Québec à Chicoutimi (UQAC)</strong>. Cette mobilité internationale m’a permis de valider la troisième année de mon <strong>B.U.T. Informatique</strong> tout en préparant un <strong>Baccalauréat en informatique</strong> selon le système nord-américain.
+      </p>
+    
+      <p>
+        En parallèle de mes études, j’ai intégré l’équipe d’<strong>athlétisme universitaire des Inuk</strong>, où je me suis investi dans la course à pied en compétition, dans le cadre d’un entraînement intensif encadré. Cette expérience m’a permis de cultiver les valeurs d’endurance, de performance et de résilience. J'y ai même gagné ma première course. 
+      </p>
+    
+      <p>
+        J’ai également occupé un <strong>poste de conseiller en chaussures</strong> chez <strong>Sport Expert Chicoutimi</strong>. Ce job étudiant m’a confronté aux exigences du service client, de la gestion de stock et du conseil technique, dans un environnement exigeant et dynamique.
+      </p>
+    
+      <p>
+        Concilier mes études à temps plein, un emploi étudiant et un engagement sportif de haut niveau a nécessité une <strong>organisation rigoureuse</strong>, une gestion optimale de mon temps, ainsi qu’une grande résilience. Cette capacité à maintenir un équilibre entre performance académique, sportive et professionnelle constitue l’un des accomplissements majeurs de mon année.
+      </p>
+    
+      <p>
+        Enfin, cette mobilité a été l’occasion de découvrir les vastes paysages québécois : j’ai exploré la nature environnante à travers des <strong>randonnées</strong>, du <strong>ski de randonnée</strong> et du <strong>ski de fond</strong>. Ces activités m’ont permis de vivre pleinement l’hiver canadien et de renforcer mon lien avec l’environnement, un aspect fondamental de mon équilibre personnel.
+      </p>
+      <blockquote class="highlight-international">
+        « Étudier, travailler et m'entraîner au Québec a été une immersion totale : j’y ai découvert la rigueur, la résilience, mais aussi la richesse humaine et culturelle du Canada. »
+      </blockquote>
+      <h4>Ce que cette année m’a appris :</h4>
+  <ul class="bullet-acquis">
+    <li><strong>Autonomie :</strong> organiser mes études, mon emploi et mes entraînements de manière rigoureuse</li>
+    <li><strong>Résilience :</strong> maintenir un haut niveau d’engagement malgré les défis personnels et climatiques</li>
+    <li><strong>Multiculturalité :</strong> vivre et apprendre dans un contexte nord-américain avec des pratiques différentes</li>
+    <li><strong>Performance :</strong> atteindre mes objectifs, tant scolaires que sportifs, dont une victoire en compétition</li>
+    <li><strong>Adaptabilité :</strong> m’intégrer rapidement dans une nouvelle université, un nouveau club, un nouvel emploi</li>
+  </ul>
+  <div class="gallery-link">
+    <a href="https://photos.app.goo.gl/Foj17GDWpzxnope19" target="_blank" rel="noopener noreferrer">
+      Découvre ma galerie photo du Québec
+    </a>
+  </div>
+      <p><a href="https://www.google.com/maps/place/Université+du+Québec+à+Chicoutimi" target="_blank">
+        📍 Localiser l’UQAC sur Google Maps
+        </a></p>
+        
+    </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-links">
+        <a href="https://fr.linkedin.com/in/alexis-chabanne-068b062b1" target="_blank">LinkedIn</a>
+        <a href="https://github.com/alexisChab" target="_blank">GitHub</a>
+        <a href="reconnaissance_academique.pdf" target="_blank">Attestation d'excellence</a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Alexis Chabanne. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.gallery-item');
+  
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+  
+        // Active class styling
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+  
+        // Filter logic
+        items.forEach(item => {
+          if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.interactive-section').forEach(section => {
+      section.addEventListener('click', e => {
+        if (!e.target.closest('a, button')) {
+          section.classList.toggle('hidden');
+        }
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.interactive-section').forEach(section => {
+      section.addEventListener('mousedown', e => {
+        // Si le clic est sur un lien ou un bouton, on ne fait rien
+        if (e.target.closest('a, button')) {
+          e.stopPropagation();
+          return;
+        }
+        section.classList.add('active');
+      });
+  
+      section.addEventListener('mouseup', () => {
+        section.classList.remove('active');
+      });
+  
+      section.addEventListener('mouseleave', () => {
+        section.classList.remove('active');
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('mousedown', () => {
+        item.classList.add('active');
+      });
+      item.addEventListener('mouseup', () => {
+        item.classList.remove('active');
+      });
+      item.addEventListener('mouseleave', () => {
+        item.classList.remove('active');
+      });
+    });
+  </script>
+  
+  <script src="Javascript/stylle.js"></script>
+  <script src="Javascript/menu_Hamburger.js"></script>
+</body>
+</html>

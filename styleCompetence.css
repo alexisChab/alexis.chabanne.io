@@ -374,5 +374,43 @@ footer {
     background-color: #555;
     color: white;
 }
-
+.tooltip-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 10px;
+    vertical-align: middle;
+    z-index: 1;
+  }
+  
+  .tooltip-icon .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 340px; /* Plus large */
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 8px;
+    padding: 12px;
+    position: absolute;
+    top: 130%; /* Monte au-dessus du titre */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Passe au-dessus du titre */
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-size: 0.85rem; /* Plus petit texte */
+    line-height: 1.4;
+    pointer-events: none;
+  }
+  
+  .tooltip-icon:hover .tooltip-text,
+  .tooltip-icon:focus .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  
   

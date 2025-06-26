@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-spacing: 0;
+  box-sizing: border-box;
+}
+
+.passions-filter {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  .filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    background-color: white;
+    color: #111;
+    border: 1px solid #ccc;
+    padding: 10px 18px;
+    margin: 0 5px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-btn:hover,
+  .filter-btn.active {
+    background-color: #222;
+    color: white;
+    border: none;
+  }
+  
+  .gallery-filtered {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+    max-height: calc(30% - 40px);
+    text-align: center;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    object-fit: cover;  
+  }
+  
+  .gallery-item figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: white;
+  } 
+  
+  .experience-internationale h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .experience-internationale p {
+    margin-bottom: 1.2rem;
+  }
+  
+  .experience-internationale ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .interactive-section {
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 2rem;
+    transition: transform 0.4s ease;
+    will-change: transform;
+  }
+  
+  .interactive-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--bg-url);
+    background-size: cover;
+    background-position: center;
+    filter: blur(12px);
+    transform: scale(1);
+    transition: filter 0.4s ease, transform 0.4s ease;
+    z-index: 0;
+  }
+  
+  .interactive-section .section-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 900px;
+    margin: auto;
+    transition: opacity 0.3s ease;
+    font-size: 1.25em;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* ▶️ Lors du clic maintenu sur la section */
+  .interactive-section.active {
+    transform: scale(1.05); /* agrandit légèrement la section entière */
+    z-index: 10; /* remonte au-dessus des autres */
+  }
+  
+  .interactive-section.active::before {
+    filter: blur(0);
+    transform: scale(1.1); /* zoom de l'image de fond */
+  }
+  
+  .interactive-section.active .section-content {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .menu-label, .menu-cb {
+    cursor: pointer;
+    appearance: none;
+    position: fixed;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    right: 30px;
+    z-index: 4;
+    color : black
+  }
+  .menu-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    max-width: 300px;
+    padding-top: 110px;
+    text-align: right;
+    background: black;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: transform 0.2s linear;
+    overflow-y: auto;
+    background-color: transparent !important;
+    color: black;
+    backdrop-filter: blur(8px);
+  }
+  ul {
+    list-style: none;
+  }
+  .menu-item {
+    padding: .5em 20px;
+    border-top: 1px solid black;
+    position: relative;
+  }
+  a {
+    font-size: 30px;
+    text-decoration: none;
+    color: #ddd;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  .menu-cb:checked ~ .menu-nav {
+    transform: translateX(0);
+  }
+  .menu-nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s;
+  }
+  
+  .menu-nav a:hover {
+    color: #444;
+  }
+  .menu-item .dropbtn {
+    cursor: pointer;
+  }
+  .dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: #333;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+  }
+  .dropdown-content a {
+    color: black; /* Texte du menu blanc */
+    padding: 12px 16px;
+    text-decoration: none;
+    flex-grow: 1;
+    text-size-adjust: auto;
+    font-size: medium;
+    font-weight: bold;
+  }
+  .logo_media {
+    width: 10%;
+    height: 10%;
+  }
+  .dropdown-content a:hover {
+    background-color: transparent !important;
+    color: black;
+    backdrop-filter: blur(8px);
+  }
+  .menu-item.dropdown:hover .dropdown-content {
+    max-height: 200px;
+    transition: max-height 0.5s ease-in;
+    background-color: transparent !important;
+    color: black;
+    backdrop-filter: blur(8px);
+  }
+
+
+  .section-content h3,
+.section-content h4 {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.section-content p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.section-content ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+  list-style: disc;
+  color: white;
+}
+
+.section-content li {
+  margin-bottom: 0.3rem;
+}
+
+.site-footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+.footer-top {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-bottom p {
+  color: #ddd; /* Texte blanc */
+  text-align: center;
+}
+.highlight-international {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #4da6ff;
+  padding: 1rem;
+  font-style: italic;
+  margin: 2rem 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.international-highlight h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: #87cefa;
+}
+
+.bullet-acquis {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.bullet-acquis li {
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+.gallery-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.gallery-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.gallery-link a {
+  display: inline-block;
+  width: auto;
+  max-width: none;
+  background-color: #dfefff;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size : 1rem;
+}
+.gallery-link a:hover {
+  background-color: #b0d4ff;
+}
+
+.experience-internationale a{
+  display: flex;
+  justify-content: center;
+}

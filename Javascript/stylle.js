@@ -129,6 +129,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("message-container").style.display = "none";
-});
+    const messageContainer = document.getElementById("message-container");
+    if (messageContainer) {
+      messageContainer.style.display = "none";
+    }
+  });
+  
 

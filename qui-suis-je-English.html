@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qui suis-je ? - Alexis Chabanne</title>
+  <link rel="stylesheet" href="style_who_i_am.css">
+</head>
+<body>
+
+  <header>
+    <label for="menu-cb" class="menu-label">
+        <svg viewBox="0 0 32 32" fill="black">
+            <rect x="0" y="4" rx="3" ry="3" width="32" height="3" />
+            <rect x="0" y="14" rx="3" ry="3" width="32" height="3" />
+            <rect x="0" y="24" rx="3" ry="3" width="32" height="3" />
+        </svg>
+    </label>
+    <input type="checkbox" id="menu-cb" class="menu-cb">
+    <nav class="menu-nav">
+      <ul>
+        <li class="menu-item"><a href="#about_me">About Me</a></li>
+        <li class="menu-item"><a href="#skills">My Skills</a></li>
+        <li class="menu-item dropdown">
+            <a href="#projects" class="dropbtn">Projects</a>
+            <div class="dropdown-content">
+                <a href="#project1">Version Validation Tool</a>
+                <a href="#project2">Sports Wiki</a>
+                <a href="#project3">Educational Game</a>
+            </div>
+        </li>
+        <li class="menu-item"><a href="#cursus_cv">Education</a></li>
+        <li class="menu-item"><a href="#contact">Contact</a></li>
+        <li class="menu-item">
+            <a href="https://github.com/alexisChab"><img class="logo_media" src="img/logo_github.png" alt="Github"></a>
+        </li>
+        <li class="menu-item dropdown">
+        <a href="#" class="dropbtn">language</a>
+            <div class="dropdown-content">
+                <a href="qui-suis-je.html">French</a>
+                <a href="#">English</a>
+            </div>
+        </li>
+    </ul>
+    </nav>
+</header>
+
+<main class="qui-suis-je">
+    
+  <section class="presentation interactive-section" class="interactive-section"  style="--bg-url: url('img/who_i_am/gala_inuk.jpg')">
+    <div class="section-content">
+    <h2>Professional Background</h2>
+  
+    <p>
+      My name is Alexis Chabanne, a graduate in Computer Science (BUT) – Application Development: Design, Development, Validation track – from IUT2 Grenoble. I completed my third year abroad as part of a university exchange at UQAC (Université du Québec à Chicoutimi), within a double-degree program. This experience allowed me to grow in a multicultural, stimulating, and demanding environment while strengthening both my technical and interpersonal skills.
+    </p>
+  
+    <p>
+      My academic path allowed me to explore a wide range of fields, from web and mobile development to artificial intelligence, including project management, database modeling, and deployment environments. Among the most significant courses I took were:
+    </p>
+  
+    <ul>
+      <li>Machine Learning for Data Science</li>
+      <li>Advanced Web Technologies</li>
+      <li>Mobile Computing</li>
+      <li>Algorithms and Data Structures</li>
+      <li>Advanced Databases (PostgreSQL, MongoDB, etc.)</li>
+      <li>Application Deployment Environments</li>
+      <li>Production Management and Agile Teamwork</li>
+    </ul>
+    
+  
+    <p>
+      I applied these skills in both academic and personal projects, notably by developing a sports event management application (“Step by Step”) and a community website focused on sports. The latter combines my two main passions: computing and sports.
+    </p>
+  
+    <p>
+      As a lifelong athlete, I have played football in clubs since childhood and have been practicing running (marathon, trail) for the past two years. During my year in Québec, I joined the university athletics program, which allowed me to continue progressing while developing discipline, perseverance, and team spirit — fundamental qualities both on the field and in the professional world.
+    </p>
+  
+    <p>
+      Admitted for the 2025 academic year to ENSIBS (École Nationale Supérieure d’Ingénieurs de Bretagne Sud), and currently in the process of admission to Polytech, I aim to deepen my knowledge in software systems engineering, with a focus on impactful, robust, and meaningful projects.
+    </p>
+  
+    <p>
+      I am open to opportunities in software development, data science, application architecture, or the design of web and mobile solutions — whether through internships, work-study programs, or collaborations. Serious, curious, adaptable, and committed, I am ready to take on new technological challenges.
+    </p>
+  </div>
+  </section>
+  
+
+  <section class="mes-passions interactive-section" style="--bg-url: url('img/who_i_am/IMG_4700.jpg')">
+    <div class="section-content">
+    <h2>My Passions</h2>
+    <h3>Sports</h3>
+    <!-- INTRO TEXTE SPORT -->
+    <p>
+      Sports play an important role in my life, both for balance and for the values they bring me. I have been playing football since childhood, and in recent years I have engaged in various disciplines such as running (road, trail, cross-country, athletics), as well as winter sports like downhill skiing, ski touring, and skate-style cross-country skiing. These activities have taught me discipline, endurance, resilience, and the joy of continuous improvement.
+    </p>
+  
+    <!-- BOUTONS FILTRE -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ski">Ski</button>
+      <button class="filter-btn" data-filter="course">Running</button>
+    </div>
+  
+    <!-- GALERIE SPORTIVE -->
+     
+    <div class="gallery-filtered">
+      <!-- Ski -->
+      <figure class="gallery-item ski">
+        <img src="img/who_i_am/20230206_101340.jpg" alt="Ski alpin en station" />
+        <figcaption>Downhill skiing practiced since childhood</figcaption>
+      </figure>
+      <figure class="gallery-item ski">
+        <img src="img/who_i_am/received_538541272511961.jpeg" alt="Ski de randonnée" />
+        <figcaption>Ski touring: freedom and nature beyond the ski resorts</figcaption>
+      </figure>
+      <figure class="gallery-item ski">
+        <img src="img/who_i_am/rando_2.jpg" alt="Ski de fond skating" />
+        <figcaption>Skate-style cross-country skiing: endurance and glide</figcaption>
+      </figure>
+  
+      <!-- Course -->
+      <figure class="gallery-item course">
+        <img src="img/who_i_am/54599168134_1982ab6b67_o.jpg" alt="Course sur route" />
+        <figcaption>Road running: half-marathons, steady progress</figcaption>
+      </figure>
+      <figure class="gallery-item course">
+        <img src="img/who_i_am/_F8A1882.jpg" alt="Trail running" />
+        <figcaption>Trail running: immersion and exertion in nature</figcaption>
+      </figure>
+      <figure class="gallery-item course">
+        <img src="img/who_i_am/Messenger_creation_3A24E200-A0D0-4883.jpeg" alt="Athlétisme universitaire" />
+        <figcaption>Athletics in Québec: performance and coaching</figcaption>
+      </figure>
+      <figure class="gallery-item course">
+        <img src="img/who_i_am/DSC09918.jpg" alt="Course de cross" />
+        <figcaption>Cross-country: pace, intensity, mindset</figcaption>
+      </figure>
+    </div>
+  
+    <!-- TEXTE AUTRES PASSIONS -->
+    <div class="autres-passions">
+      <h3>Cultural and Personal Passions</h3>
+
+  <h4>Cultural and Personal Passions</h4>
+  <p>
+    Outside of sports, I devote a lot of time to <strong>reading</strong>, particularly in the genres of fantasy and modern mythology. The works of <strong>J.R.R. Tolkien</strong> and <strong>Rick Riordan</strong> inspire me through their narrative richness, their connection to mythology, and their evocative power.
+  </p>
+  <p>These readings fuel my creativity and imagination.</p>
+
+  <h4>Hiking and Connection to Nature</h4>
+  <p>
+    I also enjoy <strong>hiking</strong>, both as a gentle physical activity and as a way to reconnect with nature. It’s a natural extension of my passion for outdoor sports, especially in mountainous regions.
+  </p>
+
+  <h4>4History and General Knowledge</h4>
+  <p>
+    I am also interested in <strong>history</strong>: major civilizations, political contexts, historical narratives, and documentaries. This passion helps me gain perspective on current events and enrich my general knowledge.
+  </p>
+
+  <ul>
+    <li>Tolkien’s universe</li>
+    <li>Fantasy reading: Tolkien, Riordan, immersive worlds</li>
+    <li>Hiking: connection to nature and balance</li>
+    <li>Passion for history</li>
+    <li>History: understanding the past to shed light on the present</li>
+  </ul>
+  
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="experience-internationale interactive-section" style="--bg-url: url('img/who_i_am/20241109_131555.jpg')">
+    <div class="section-content">
+    <h2>My International Year</h2>
+  
+    <p>
+      In 2024–2025, I completed a university exchange year abroad as part of a double-degree program at the <strong>Université du Québec à Chicoutimi (UQAC)</strong>. This international mobility allowed me to validate the third year of my <strong>BUT in Computer Science</strong> while working toward a <strong>Bachelor’s degree in Computer Science</strong> under the North American system.
+    </p>
+  
+    <p>
+      Alongside my studies, I joined the <strong>Inuk university athletics team</strong>, where I took part in competitive running with intensive supervised training. This experience allowed me to cultivate values of endurance, performance, and resilience. I even won my first race there. 
+    </p>
+  
+    <p>
+      I also held a <strong>position as a footwear advisor</strong> at <strong>Sport Expert Chicoutimi</strong>. This student job exposed me to the demands of customer service, inventory management, and technical advice, in a fast-paced and demanding environment.
+    </p>
+  
+    <p>
+      Balancing full-time studies, a student job, and a high-level athletic commitment required <strong>rigorous organization</strong>, optimal time management, and strong resilience. The ability to maintain a balance between academic, athletic, and professional performance stands as one of the key accomplishments of my year.
+    </p>
+  
+    <p>
+      Finally, this mobility was an opportunity to discover the vast landscapes of Québec: I explored the surrounding nature through <strong>hiking</strong>, <strong>ski touring</strong>, and <strong>cross-country skiing</strong>. These activities allowed me to fully experience the Canadian winter and to strengthen my connection with the environment — a fundamental aspect of my personal balance.
+    </p>
+    <blockquote class="highlight-international">
+      “Studying, working, and training in Québec was a full immersion: I discovered rigor, resilience, and the rich human and cultural fabric of Canada.”
+    </blockquote>
+    <h4>What this year taught me:</h4>
+<ul class="bullet-acquis">
+    <li><strong>Autonomy:</strong> managing my studies, job, and training with discipline</li>
+    <li><strong>Resilience:</strong> maintaining a high level of commitment despite personal and weather-related challenges</li>
+    <li><strong>Multiculturality:</strong> living and learning in a North American context with different practices</li>
+    <li><strong>Performance:</strong> achieving my academic and athletic goals, including a competition victory</li>
+    <li><strong>Adaptability:</strong> quickly integrating into a new university, a new team, and a new job</li>
+  </ul>
+  <div class="gallery-link">
+    <a href="https://photos.app.goo.gl/Foj17GDWpzxnope19" target="_blank" rel="noopener noreferrer">
+      Discover my photo gallery from Québec
+    </a>
+  </div>
+  
+    <p><a href="https://www.google.com/maps/place/Université+du+Québec+à+Chicoutimi" target="_blank">
+      📍 Locate UQAC on Google Maps
+      </a></p>
+      
+  </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-links">
+      <a href="https://fr.linkedin.com/in/alexis-chabanne-068b062b1" target="_blank">LinkedIn</a>
+      <a href="https://github.com/alexisChab" target="_blank">GitHub</a>
+      <a href="reconnaissance_academique.pdf" target="_blank">Certificate of Excellence</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Alexis Chabanne. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.gallery-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+
+      // Active class styling
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Filter logic
+      items.forEach(item => {
+        if (filter === 'all' || item.classList.contains(filter)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.interactive-section').forEach(section => {
+    section.addEventListener('click', e => {
+      if (!e.target.closest('a, button')) {
+        section.classList.toggle('hidden');
+      }
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.interactive-section').forEach(section => {
+    section.addEventListener('mousedown', e => {
+      // Si le clic est sur un lien ou un bouton, on ne fait rien
+      if (e.target.closest('a, button')) {
+        e.stopPropagation();
+        return;
+      }
+      section.classList.add('active');
+    });
+
+    section.addEventListener('mouseup', () => {
+      section.classList.remove('active');
+    });
+
+    section.addEventListener('mouseleave', () => {
+      section.classList.remove('active');
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('mousedown', () => {
+      item.classList.add('active');
+    });
+    item.addEventListener('mouseup', () => {
+      item.classList.remove('active');
+    });
+    item.addEventListener('mouseleave', () => {
+      item.classList.remove('active');
+    });
+  });
+</script>
+
+<script src="Javascript/stylle.js"></script>
+<script src="Javascript/menu_Hamburger.js"></script>
+</body>
+</html>
